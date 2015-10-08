@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">PresidentialBracket</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_list">ListActivity</string>
+    <string name="title_activity_next">nextActivity</string>
+    <string name="LoginPost">LoginPost</string>
+    <string name="Carousel">Carousel!</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="GOP">GOP faces</string>
+
+    <!--Candidate Description-->
+    <string name="Clinton">Youre from the windy city where youre looking pretty with your blowhards but come January youll be left evicted and with no job</string>
+    <string name="Sanders">sandy</string>
+    <string name="Biden">im bad</string>
+    <string name="Webb">webb</string>
+    <string name="OMalley">oreilly</string>
+    <string name="Chafee">the guy above me is annoying</string>
+
+    <string name="Trump">CANT STUMP THE TRUMP</string>
+    <string name="Carson">Im the only one to separate siamese twins</string>
+    <string name="Rubio">rubio</string>
+    <string name="Cruz">Cruz</string>
+    <string name="Fiorina">Fiorina</string>
+    <string name="Bush">Bush</string>
+    <string name="Kasich">Kasich</string>
+    <string name="Huckabee">Huckabee</string>
+    <string name="Christie">Christie</string>
+    <string name="Paul">Paul</string>
+    <string name="Jindal">Jindal</string>
+    <string name="Santorum">Santorum</string>
+    <string name="Graham">reag</string>
+    <string name="Pataki">pate</string>
+    <string name="Walker">walker</string>
+    <string name="Perry">perry the platypus!!!</string>
+</resources>

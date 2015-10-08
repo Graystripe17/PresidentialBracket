@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#ffe9000b</color>
+    <color name="primary_dark">#ff0000ff</color>
+    <color name="accent">#ffffffff</color>
+
+
+    <color name="R1">#ffff0000</color>
+    <color name="R2">#ffff0a0a</color>
+    <color name="R3">#ffff1e14</color>
+    <color name="R4">#ffff280a</color>
+    <color name="R5">#ffff3232</color>
+    <array name="red_rainbow">
+        <item>@color/R1</item>
+        <item>@color/R2</item>
+        <item>@color/R3</item>
+        <item>@color/R4</item>
+        <item>@color/R5</item>
+    </array>
+</resources>
