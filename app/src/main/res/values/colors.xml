@@ -10,11 +10,33 @@
     <color name="R3">#ffff1e14</color>
     <color name="R4">#ffff280a</color>
     <color name="R5">#ffff3232</color>
+    <color name="R6">#ffff4848</color>
+    <color name="R7">#ffff6464</color>
+    <color name="R8">#ffff8080</color>
+    <color name="R9">#ffffa9bf</color>
+    <color name="R10">#ffffd9fa</color>
+    <color name="R11">#ffff9cf7</color>
+    <color name="R12">#ffff73ff</color>
+    <color name="R13">#ffff51e8</color>
+    <color name="R14">#ffff39dd</color>
+    <color name="R15">#ffff1edc</color>
+    <color name="R16">#ffff00ec</color>
     <array name="red_rainbow">
         <item>@color/R1</item>
         <item>@color/R2</item>
         <item>@color/R3</item>
         <item>@color/R4</item>
         <item>@color/R5</item>
+        <item>@color/R6</item>
+        <item>@color/R7</item>
+        <item>@color/R8</item>
+        <item>@color/R9</item>
+        <item>@color/R10</item>
+        <item>@color/R11</item>
+        <item>@color/R12</item>
+        <item>@color/R13</item>
+        <item>@color/R14</item>
+        <item>@color/R15</item>
+        <item>@color/R16</item>
     </array>
 </resources>

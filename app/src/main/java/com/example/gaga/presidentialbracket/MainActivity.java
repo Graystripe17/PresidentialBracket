@@ -187,8 +187,4 @@ public class MainActivity extends AppCompatActivity implements AsyncTaskComplete
         }
     }
 
-    public void sendCommentToPHP(View v) {
-//        new PostComment().execute(comment, username, PosterID);
-    }
-
 }

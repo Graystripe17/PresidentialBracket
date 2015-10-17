@@ -43,12 +43,18 @@ public class DownloadComments extends AsyncTask<String, Void, Void> {
             BufferedReader reader = new BufferedReader(new InputStreamReader(conn.getInputStream()));
 
             StringBuilder sb = new StringBuilder();
-            String line = null;
+            String line = reader.readLine();
 
             // Read Server Response
             // Skip until it works
-            while (!(line = reader.readLine()).contains("COMMENTLINEARLIST")) {
+            int counter = 10000;
+            while (!(line).contains("COMMENTLINEARLIST")) {
                 // Finished
+                line = reader.readLine();
+                if(counter-- < 0 || line == null) {
+                    // Error retrieving
+                    return null;
+                }
             }
             CommentsInLinearList = Integer.parseInt(reader.readLine());
             // The Real JSON

@@ -6,7 +6,7 @@
     <string name="title_activity_list">ListActivity</string>
     <string name="title_activity_next">nextActivity</string>
     <string name="LoginPost">LoginPost</string>
-    <string name="Carousel">Carousel!</string>
+    <string name="Carousel">Carousel</string>
 
 <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

@@ -83,15 +83,16 @@ public class Bios extends AppCompatActivity implements View.OnClickListener {
 //        commentsListView.setAdapter(commentAdapter);
         // Inflate ListView Comments
 
-        populateExpandableListView();
-        registerClickCallback();
-
         Bundle extras = getIntent().getExtras();
         if (extras == null) {
             candidate = "Trump";
         } else {
             candidate = extras.getString("candidateName");
         }
+
+        populateExpandableListView();
+        registerClickCallback();
+
 
         // Change header title
         TextView TITLE = (TextView) findViewById(R.id.Candidate);
@@ -141,9 +142,9 @@ public class Bios extends AppCompatActivity implements View.OnClickListener {
                 if(!commentString.isEmpty()) {
                     // Execute doInBackground
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
-                        new PostComment().executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, commentString, MainActivity.username, Integer.toString(MainActivity.PosterID));
+                        new PostComment().executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, commentString, MainActivity.username, Integer.toString(MainActivity.PosterID), candidate);
                     } else {
-                        new PostComment().execute(commentString, MainActivity.username, Integer.toString(MainActivity.PosterID));
+                        new PostComment().execute(commentString, MainActivity.username, Integer.toString(MainActivity.PosterID), candidate);
                     }
                 }
                 commentHandler.setText("");
@@ -158,9 +159,13 @@ public class Bios extends AppCompatActivity implements View.OnClickListener {
         // Prepare LDH
         prepareListData();
 
-        adapter = new MyExpandableListAdapter(this, listDataHeader, listDataChild);
-        ExpandableListView list = (ExpandableListView) findViewById(R.id.ELVbios);
-        list.setAdapter(adapter);
+        if(nextActivity.isRepublicanByName(candidate)) {
+            adapter = new MyExpandableListAdapter(this, listDataHeader, listDataChild);
+            ExpandableListView list = (ExpandableListView) findViewById(R.id.ELVbios);
+            list.setAdapter(adapter);
+        } else {
+
+        }
     }
 
     private void registerClickCallback() {
@@ -216,11 +221,6 @@ public class Bios extends AppCompatActivity implements View.OnClickListener {
         listDataChild.put(listDataHeader.get(1), header2);
         listDataChild.put(listDataHeader.get(2), header3);
         listDataChild.put(listDataHeader.get(3), header4);
-
-
     }
 
-
 }
-
-

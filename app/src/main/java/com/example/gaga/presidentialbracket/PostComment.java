@@ -25,6 +25,7 @@ public class PostComment extends AsyncTask<String, Void, Void> {
             String comment = arg0[0];
             String username = arg0[1];
             String PosterName = arg0[2];
+            String candidate = arg0[3];
 
 
             // EDIT LINK
@@ -36,7 +37,10 @@ public class PostComment extends AsyncTask<String, Void, Void> {
                     + URLEncoder.encode(comment, "UTF-8")
                     + "&"
                     + URLEncoder.encode("UN", "UTF-8") + "="
-                    + URLEncoder.encode(username, "UTF-8");
+                    + URLEncoder.encode(username, "UTF-8")
+                    + "&"
+                    + URLEncoder.encode("candidate", "UTF-8") + "="
+                    + URLEncoder.encode(candidate, "UTF-8");
             URLConnection conn = url.openConnection();
 
             System.setProperty("http.keepAlive", "false");

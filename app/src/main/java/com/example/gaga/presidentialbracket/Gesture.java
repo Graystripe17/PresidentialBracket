@@ -27,14 +27,13 @@ import java.util.ArrayList;
 public class Gesture extends nextActivity implements AdapterView.OnItemSelectedListener, ViewSwitcher.ViewFactory {
 
 
-    ImageSwitcher switcher;
+    ImageSwitcher Rswitcher, Dswitcher;
     ArrayList<Drawable> allImages = new ArrayList<Drawable>();
-    ImageView faces;
+    ImageView Rfaces, Dfaces;
     float initialX;
     private Cursor cursor;
     private int columnIndex, position = 0;
     private static final String DEBUG_TAG = "Gestures";
-    private GestureDetectorCompat mDetector;
 
 
     // This example shows an Activity, but you would use the same approach if
@@ -53,13 +52,14 @@ public class Gesture extends nextActivity implements AdapterView.OnItemSelectedL
                 if(initialX > finalX) {
                     cursor.moveToPosition(position);
                     int imageID = cursor.getInt(columnIndex);
-                    faces.setImageURI(Uri.withAppendedPath(MediaStore.Images.Thumbnails.EXTERNAL_CONTENT_URI, "" + imageID));
-                    faces.setImageResource(R.drawable.rabbits);
+//                    Rfaces.setImageURI(Uri.withAppendedPath(MediaStore.Images.Thumbnails.EXTERNAL_CONTENT_URI, "" + imageID));
+//                    Dfaces.setImageURI(Uri.withAppendedPath(MediaStore.Images.Thumbnails.EXTERNAL_CONTENT_URI, "" + imageID));
+//                    Rfaces.setImageResource(R.drawable.rabbits);
+//                    Dfaces.setImageResource(R.drawable.rabbits);
                 }
                 GestureListener cat = new GestureListener();
             default:
                 return super.onTouchEvent(event);
-
         }
     }
 
@@ -74,13 +74,18 @@ public class Gesture extends nextActivity implements AdapterView.OnItemSelectedL
 
         getImages(); // Load the images into ArrayList allImages
 
-        switcher = (ImageSwitcher) findViewById(R.id.peek);
-        faces = (ImageView) findViewById(R.id.republicanFaces);
-        faces.setImageResource(R.drawable.rabbits);
+        Rswitcher = (ImageSwitcher) findViewById(R.id.peek);
+        Dswitcher = (ImageSwitcher) findViewById(R.id.democratSwitcher);
+        Rfaces = (ImageView) findViewById(R.id.republicanFaces);
+        Rfaces.setImageResource(R.drawable.rabbits);
+        Dfaces = (ImageView) findViewById(R.id.democratFaces);
+        Dfaces.setImageResource(R.drawable.rabbits);
 
         // START ANIMATION
-        switcher.setInAnimation(AnimationUtils.loadAnimation(this, android.R.anim.fade_in));
-        switcher.setOutAnimation(AnimationUtils.loadAnimation(this, android.R.anim.fade_out));
+        Rswitcher.setInAnimation(AnimationUtils.loadAnimation(this, android.R.anim.fade_in));
+        Dswitcher.setInAnimation(AnimationUtils.loadAnimation(this, android.R.anim.fade_in));
+        Rswitcher.setOutAnimation(AnimationUtils.loadAnimation(this, android.R.anim.fade_out));
+        Dswitcher.setOutAnimation(AnimationUtils.loadAnimation(this, android.R.anim.fade_out));
         // END ANIMATION
 
     }
@@ -144,19 +149,19 @@ public class Gesture extends nextActivity implements AdapterView.OnItemSelectedL
 
     private void getImages() {
         if(android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP) {
-            allImages.add(this.getDrawable(R.drawable.meerkat));
-            allImages.add(this.getDrawable(R.drawable.rabbits));
+//            allImages.add(this.getDrawable(R.drawable.meerkat));
+//            allImages.add(this.getDrawable(R.drawable.rabbits));
         } else {
-            allImages.add(this.getResources().getDrawable(R.drawable.meerkat));
-            allImages.add(this.getResources().getDrawable(R.drawable.rabbits));
-
+//            allImages.add(this.getResources().getDrawable(R.drawable.meerkat));
+//            allImages.add(this.getResources().getDrawable(R.drawable.rabbits));
         }
     }
 
     @Override
     public void onItemSelected(AdapterView<?> arg0, View v, int position, long id) {
         try {
-            switcher.setImageDrawable(allImages.get(position));
+//            Rswitcher.setImageDrawable(allImages.get(position));
+//            Dswitcher.setImageDrawable(allImages.get(position));
         } catch(Exception e) {
             System.out.println(e);
         }
@@ -177,9 +182,9 @@ public class Gesture extends nextActivity implements AdapterView.OnItemSelectedL
     @Override
     public View makeView() {
         ImageView i = new ImageView(this);
-        i.setBackgroundColor(0xFF000000);
+        i.setBackgroundColor(0xFF660000);
         i.setScaleType(ImageView.ScaleType.FIT_CENTER);
-        i.setLayoutParams(new ImageSwitcher.LayoutParams(ImageSwitcher.LayoutParams.FILL_PARENT, ImageSwitcher.LayoutParams.FILL_PARENT));
+        i.setLayoutParams(new ImageSwitcher.LayoutParams(ImageSwitcher.LayoutParams.MATCH_PARENT, ImageSwitcher.LayoutParams.MATCH_PARENT));
         return i;
     }
 
@@ -211,8 +216,6 @@ public class Gesture extends nextActivity implements AdapterView.OnItemSelectedL
             galleryview.setPadding(5, 0, 5, 0);
             galleryview.setBackgroundResource(android.R.drawable.picture_frame);
             return galleryview;
-
-
         }
     }
 }
