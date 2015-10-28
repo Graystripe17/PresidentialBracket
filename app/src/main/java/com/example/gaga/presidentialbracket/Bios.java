@@ -114,9 +114,6 @@ public class Bios extends AppCompatActivity implements View.OnClickListener {
             new DownloadCommentsUpdated().execute(candidate);
         }
 
-        // TODO: Form new thread
-        // Abandon BaseAdapter
-        // Warning may not be done loading
 
 
         // Set on tab change listener (refresh comments when discussion triggered)
