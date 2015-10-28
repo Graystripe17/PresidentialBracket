@@ -5,35 +5,1068 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_list">ListActivity</string>
     <string name="title_activity_next">nextActivity</string>
-    <string name="LoginPost">LoginPost</string>
+    <string name="LoginPost">GO</string>
     <string name="Carousel">Carousel</string>
 
 <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="GOP">GOP faces</string>
 
-    <!--Candidate Description-->
-    <string name="Clinton">Youre from the windy city where youre looking pretty with your blowhards but come January youll be left evicted and with no job</string>
+    <!--Democrats-->
+    <string name="Clinton">job</string>
     <string name="Sanders">sandy</string>
     <string name="Biden">im bad</string>
-    <string name="Webb">webb</string>
+    <string name="Webb">imma bitch</string>
     <string name="OMalley">oreilly</string>
     <string name="Chafee">the guy above me is annoying</string>
 
+    <!--Republicans-->
     <string name="Trump">CANT STUMP THE TRUMP</string>
     <string name="Carson">Im the only one to separate siamese twins</string>
-    <string name="Rubio">rubio</string>
+    <string name="Rubio">rubiks cube</string>
     <string name="Cruz">Cruz</string>
-    <string name="Fiorina">Fiorina</string>
-    <string name="Bush">Bush</string>
+    <string name="Fiorina">glass ceiling</string>
+    <string name="Bush">jeb</string>
     <string name="Kasich">Kasich</string>
-    <string name="Huckabee">Huckabee</string>
-    <string name="Christie">Christie</string>
-    <string name="Paul">Paul</string>
-    <string name="Jindal">Jindal</string>
-    <string name="Santorum">Santorum</string>
+    <string name="Huckabee">christian</string>
+    <string name="Christie">9/11</string>
+    <string name="Paul">mean</string>
+    <string name="Jindal">indian</string>
+    <string name="Santorum">dropout</string>
     <string name="Graham">reag</string>
-    <string name="Pataki">pate</string>
+    <string name="Pataki">who r u evn</string>
     <string name="Walker">walker</string>
     <string name="Perry">perry the platypus!!!</string>
+
+    <!--Clinton-->
+    <string-array formatted="false" name="ClintonDescription">
+        <item>Self-proclaimed Progressive</item>
+        <item>Secretary of State</item>
+        <item>New York Senator</item>
+        <item>First Lady and wife to Bill Clinton</item>
+        <item>Net Worth: $55,000,000</item>
+        <item>Methodist</item>
+        <item>68 F</item>
+    </string-array>
+    <string-array formatted="false" name="ClintonStrategy">
+        <item>Her campaign is funded by individual and private donors and have raised over $76B. Leading in current polls, Hillary
+        is running President for the second time after being overtaken by Barack Obama in 2008</item>
+        <item>Targeted women and youth voters in ads and talk shows and holds herself as the champion of everyday Americans</item>
+        <item>Downplay the e-mail and Benghazi scandals that have plagued her campaign</item>
+        <item>Huge advantage in Florida over Sanders, but must actively keep her close leads in Iowa and Wisconsin</item>
+    </string-array>
+    <string-array formatted="false" name="ClintonEconomyPlans">
+        <item>Raise Minimum Wage</item>
+        <item>Pro Union</item>
+        <item>Cut Middle Class taxes, raise taxes on wealthy</item>
+        <item>Supports increasing the salaries of the middle class people</item>
+        <item>Supports a more potent Capital Gains Tax over time</item>
+        <item>Wants to monitor Wall St. Banks, only break up "Too Big to Fail" banks if risky</item>
+        <item>Currently does not support <i>Trans-Pacific Partnership</i> which cuts trade barriers, protects multinational corporations\'
+        intellectual properties and sets labor and environmental standards</item>
+        <item>Upgrade infrastructure with tax dollars</item>
+    </string-array>
+    <string-array formatted="false" name="ClintonSocialIssues">
+        <item>LGBT rights (evolved to pro)</item>
+        <item>Pro Choice</item>
+        <item>Women\'s rights to equal pay</item>
+        <item>Strengthen ObamaCare</item>
+        <item>Marijuana legalization should be tested by the states before being federally enacted</item>
+        <item>Pro Common Core</item>
+        <item>Supports EPA</item>
+        <item>Supports capital punishment</item>
+        <item>Against absolute right to gun ownership</item>
+    </string-array>
+    <string-array formatted="false" name="ClintonForeignPolicy">
+        <item>Russia must work to help Syria, not cause chaos</item>
+        <item>Will not hesitate to use military force against Iran to prevent nuclear acquisition</item>
+        <item>Vowed to preserve Israel\'s military by renewing security package ($3 billion per year in aid)</item>
+        <item>Drastically escalate of arming Syrians against Assad</item>
+    </string-array>
+    <string-array formatted="false" name="ClintonFaults">
+        <item>Political Expediency depending on where she campaigns (Trade Deal "gold standard")</item>
+        <item>Criticized by DNC as Moderate</item>
+        <item>Email and Benghazi scandals</item>
+        <item>Mishandled health care "Hillary Care"</item>
+        <item>Believed in Iraq WMD</item>
+        <item>Close ties to Wall St.</item>
+    </string-array>
+    <string-array formatted="false" name="ClintonRecord">
+        <item>Voted in favor of war in Iraq</item>
+        <item>Supported sending resources in Libya but no active fighting</item>
+        <item>Black Lives Matter</item>
+        <item>Voted pro on $60 billion stimulus package</item>
+        <item>Voted pro Dodd-Frank</item>
+        <item>Voted pro choice</item>
+        <item>Voted against paying down federal debt by cutting programs</item>
+    </string-array>
+
+
+
+    <!--Sanders-->
+    <string-array formatted="false" name="SandersDescription">
+        <item>Self-proclaimed Democratic Socialist</item>
+        <item>Mayor of Burlington</item>
+        <item>Vermont Senator</item>
+        <item>Net Worth: $530,000</item>
+        <item>Jewish</item>
+        <item>74 M</item>
+    </string-array>
+    <string-array formatted="false" name="SandersStrategy">
+        <item>Deprioritized emails</item>
+        <item>"Dark Horse" candidate</item>
+        <item>Reach across the aisle; it\'s easy to talk to people who agree, but harder to talk with people that disagree</item>
+        <item>Must distinguish himself from Clinton, who as a result is being pulled to the left</item>
+        <item>Struggling to win over New Hampshire</item>
+        <item>Against Citizens United</item>
+    </string-array>
+    <string-array formatted="false" name="SandersEconomyPlans">
+        <item>Slowly raise Minimum Wage to 15%</item>
+        <item>Fix trade policies</item>
+        <item>Model towards Netherlands</item>
+        <item>Break up Wall St. Banks, add fees for high-risk investments</item>
+        <item>Increase taxes on wealthy</item>
+        <item>Pro Social Security Expansion, Anti Privatization</item>
+        <item>Paid family leave</item>
+    </string-array>
+    <string-array formatted="false" name="SandersSocialIssues">
+        <item>LGBT friendly</item>
+        <item>Strengthen ObamaCare</item>
+        <item>Free college</item>
+        <item>Pro choice</item>
+        <item>Decriminalize marijuana, prioritize treatment</item>
+        <item>Supports Common Core</item>
+        <item>Supports GMOs, but require labeling</item>
+        <item>Firmly votes to protect environment</item>
+        <item>Black Lives Matter</item>
+    </string-array>
+    <string-array formatted="false" name="SandersForeignPolicy">
+        <item>Against US ground troops in Syria</item>
+        <item>Force is a last resort, when the US or allies are threatened</item>
+        <item>Respect Cuba</item>
+        <item>Promote democracy in China</item>
+        <item>Address humanitarian crisis in Syria</item>
+        <item>Commonly votes against Free-Trade</item>
+        <item>Against expanding military</item>
+    </string-array>
+    <string-array formatted="false" name="SandersFaults">
+        <item>Softer than other DNC candidates on Gun control</item>
+        <item>Conscientious objector to Vietnam War</item>
+        <item>Voted against tax cuts for small business in 2000</item>
+        <item>Slightly to the right of Democrats in Foreign Policy</item>
+        <item>Regrets 1972 "Rape Essay"</item>
+    </string-array>
+    <string-array formatted="false" name="SandersRecord">
+        <item>Voted against Brady Bill five times</item>
+        <item>Voted against Iraq and Gulf war</item>
+        <item>Voted for the war in Afghanistan</item>
+        <item>Voted for Syrian Air-Strikes</item>
+        <item>Voted for embryonic stem cell research</item>
+    </string-array>
+
+
+
+
+    <!--Chafee-->
+    <string-array formatted="false" name="ChafeeDescription">
+        <item><b>Lincoln Chafee has dropped out of Democratic primary race</b></item>
+        <item>Mayor of Warwick</item>
+        <item>Governor of Rhode Island</item>
+        <item>Senator of Rhode Island</item>
+        <item>Episcopalian</item>
+        <item>62 M</item>
+    </string-array>
+    <string-array formatted="false" name="ChafeeStrategy">
+    </string-array>
+    <string-array formatted="false" name="ChafeeEconomyPlans">
+    </string-array>
+    <string-array formatted="false" name="ChafeeSocialIssues">
+    </string-array>
+    <string-array formatted="false" name="ChafeeForeignPolicy">
+        <item>End all wars</item>
+    </string-array>
+    <string-array formatted="false" name="ChafeeFaults">
+        <item>#FeelTheChafee backfired</item>
+        <item>Democrat for two years prior to being Republican and Independent</item>
+        <item>Voted for growth of big banks when starting on Senate floor, later regret</item>
+    </string-array>
+    <string-array formatted="false" name="ChafeeRecord">
+        <item>Voted against Iraq war</item>
+    </string-array>
+
+
+
+    <!--O'Malley-->
+    <string-array formatted="false" name="OMalleyDescription">
+        <item>Lifelong Democrat</item>
+        <item>Mayor of Baltimore</item>
+        <item>Governor of Maryland</item>
+        <item>Net Worth: $256,000</item>
+        <item>Roman Catholic</item>
+        <item>52 M</item>
+    </string-array>
+    <string-array formatted="false" name="OMalleyStrategy">
+        <item>Significantly stood out in first DNC debate for a green energy plan</item>
+        <item>Comprehensive plans on Wall Street reform, debt-free college, climate change, immigration reform</item>
+        <item>Challenged other Democratic nominees to offer a framework on Wall St. reform as robust as his own</item>
+        <item>Quick to roll out plans, tries to be first</item>
+        <item>Attack Clinton for closeness to Wall St. and scandals</item>
+        <item>Distance himself from Obama\'s policies</item>
+        <item>O\'Say Can You See PAC</item>
+    </string-array>
+    <string-array formatted="false" name="OMalleyEconomyPlans">
+        <item>College debt free</item>
+        <item>Reinstate Glass-Steagall (limits commercial bank investments and insurance)</item>
+        <item>Fight banks that are too big to fail</item>
+        <item>Help small businesses</item>
+        <item>Raise minimum wage to $10 per hour</item>
+        <item>Cut taxes on bottom 85% while raising taxes on top 15%</item>
+        <item>Help refinance student debt</item>
+    </string-array>
+    <string-array formatted="false" name="OMalleySocialIssues">
+        <item>LGBT friendly</item>
+        <item>Plan to make America 100% clean electric by 2050</item>
+        <item>Tangible Climate control plan</item>
+        <item>Pro Abortion</item>
+        <item>Pro ObamaCare</item>
+        <item>Pro stem cell research</item>
+        <item>Pro Gun Control</item>
+        <item>Long time opponent of capital punishment</item>
+        <item>Proportionality in marijuana arrests, but not legalization. No legalization in Maryland, watch Colorado experiment</item>
+        <item>Strongly supports pathway to citizenship for illegal aliens</item>
+    </string-array>
+    <string-array formatted="false" name="OMalleyForeignPolicy">
+        <item>No Fly Zone in Syria would be unenforceable, will cause escalation against Russia</item>
+        <item>Opposes bad trade deals like Trans-Pacific Partnership</item>
+        <item>Two-state solution between Israel and Palestine</item>
+        <item>Negotiate with Iran to remove potential nuclear weapons</item>
+    </string-array>
+    <string-array formatted="false" name="OMalleyFaults">
+        <item>Criticized for Maryland\'s increase in violence</item>
+        <item>Outlier in wishing to expand the military</item>
+        <item>Private GMail account that is technically legal, but still criticized as against "the spirit of the law"</item>
+        <item>Widely unpopular tax raises in Maryland caused Republican revolution</item>
+    </string-array>
+    <string-array formatted="false" name="OMalleyRecord">
+        <item>Black Lives Matter</item>
+        <item>Repealed property tax on small business</item>
+        <item>Voted for a Wind-Powered Generating Station</item>
+        <item>Abolished death penalty in Maryland</item>
+    </string-array>
+
+
+
+    <!--Webb-->
+    <string-array formatted="false" name="WebbDescription">
+        <item><b>Jim Webb has withdrawn from the Democratic primary race to run as an independent</b></item>
+        <item>Served in the Pentagon</item>
+        <item>Marine during Vietnam</item>
+    </string-array>
+    <string-array formatted="false" name="WebbStrategy">
+        <item>Displays to voters strong foreign policy</item>
+        <item>Considering running as an independent</item>
+        <item></item>
+    </string-array>
+    <string-array formatted="false" name="WebbEconomyPlans">
+        <item>Regulate Wall St.</item>
+        <item></item>
+        <item></item>
+    </string-array>
+    <string-array formatted="false" name="WebbSocialIssues">
+        <item>Claims Affirmative Action is racist against whites, but distinguishes black affirmative action from nonwhite affirmative action</item>
+        <item>Gun mental health improvements</item>
+        <item></item>
+    </string-array>
+    <string-array formatted="false" name="WebbForeignPolicy">
+        <item>Step up to China</item>
+    </string-array>
+    <string-array formatted="false" name="WebbFaults">
+    </string-array>
+    <string-array formatted="false" name="WebbRecord">
+        <item>A rating NRA</item>
+        <item>Opposed Iraq</item>
+        <item>Black Lives Matter</item>
+    </string-array>
+
+
+
+
+
+
+
+
+
+
+    <!--Trump-->
+    <string-array formatted="false" name="TrumpDescription">
+        <item>Currently Republican</item>
+        <item>Chairman of <b>The Trump Organization</b></item>
+        <item>Chairman of <b>Trump Plaza Associates</b></item>
+        <item>Chairman of <b>Trump Atlantic City Associates</b></item>
+        <item>Host of <i>The Apprentice</i></item>
+        <item>Net Worth: $4,000,000,000</item>
+        <item>Presbyterian</item>
+        <item>69 M</item>
+    </string-array>
+    <string-array formatted="false" name="TrumpStrategy">
+        <item>Galvanize frustrated Southern States</item>
+        <item>Oppose being politically correct</item>
+        <item>Attack challengers with snappy remarks</item>
+        <item>Using his own money to fund his campaign</item>
+        <item>Pull strings of those who he had given money to</item>
+        <item>Wishes for Hispanic vote</item>
+        <item>Considered running on the same ticket as Carson</item>
+        <item>Looking to distance himself from Carson after being overtaken in Iowa</item>
+        <item>Wants to win as a Republican, but will run as Independent</item>
+    </string-array>
+    <string-array formatted="false" name="TrumpEconomyPlans">
+        <item>Eliminate national debt, advocates one-time 14%</item>
+        <item>20% tax on imported goods</item>
+        <item>Negotiate tougher trade deals</item>
+        <item>Dump weight of ObamaCare and increase insurance competition</item>
+        <item>Against free trade</item>
+        <item>Cut taxes: 4 bracket plan (1-5-10-15%}</item>
+        <item>Create jobs by 0% corporate tax</item>
+    </string-array>
+    <string-array formatted="false" name="TrumpSocialIssues">
+        <item>Pro-life</item>
+        <item>Gay marriage is a state issue</item>
+        <item>Pro Capital Punishment</item>
+        <item>Legalize drugs and tax</item>
+        <item>Against Common Core, cut Department of Education</item>
+        <item>Climate change is a hoax</item>
+        <item>Suspicious on Vaccinations</item>
+        <item>Against gun control</item>
+        <item>Restrict welfare</item>
+        <item>Privatize Social Security</item>
+    </string-array>
+    <string-array formatted="false" name="TrumpForeignPolicy">
+        <item>Pro military</item>
+        <item>Build a wall along the Mexican border, make Mexico\'s government pay for it</item>
+        <item>Gain Putin\'s respect</item>
+        <item>Sanction Iran, support Israel</item>
+        <item>Compete fiercely with China</item>
+        <item>Deal with North Korean nuclear threat</item>
+        <item>Bomb ISIS into oblivion</item>
+    </string-array>
+    <string-array formatted="false" name="TrumpFaults">
+        <item>Demanded Obama\'s birth certificate</item>
+        <item>Ridiculed over claim that vaccines cause autism</item>
+        <item>Pegged as misogynistic, racist, and Islamophobic</item>
+        <item>Criticizes opponents\' looks, retaliation targets hair</item>
+        <item>Charged for going bankrupt 4 times</item>
+        <item>Not taken seriously by many news outlets</item>
+    </string-array>
+    <string-array formatted="false" name="TrumpRecord">
+        <item>Opposed invading Iraq in 2003</item>
+    </string-array>
+
+
+
+    <!--Carson-->
+    <string-array formatted="false" name="CarsonDescription">
+        <item>Neurosurgeon</item>
+        <item>Net Worth: $10 million</item>
+        <item>Seventh-day Adventist Church</item>
+        <item>64 M</item>
+    </string-array>
+    <string-array formatted="false" name="CarsonStrategy">
+        <item>Surged past Trump in two Iowa polls</item>
+        <item>Carson is the only one to separate siamese twins</item>
+        <item>Combining two super PACs</item>
+        <item>Must work harder to attract declining black support</item>
+    </string-array>
+    <string-array formatted="false" name="CarsonEconomyPlans">
+        <item>Laissez-Faire economics</item>
+        <item>Cut every agency spending by 10%</item>
+        <item>Anti-corporate tax</item>
+        <item>Stop trade imbalance, stiff tariffs</item>
+        <item>Raise minimum wage</item>
+        <item>Supports 10% tithing flat tax</item>
+    </string-array>
+    <string-array formatted="false" name="CarsonSocialIssues">
+        <item>Against abortion after 20 weeks, no abortion for convenience</item>
+        <item>Supports gay rights, but not marriage</item>
+        <item>Pro medical marijuana, against recreational use</item>
+        <item>Against Common Core</item>
+        <item>Energy independence</item>
+        <item>Climate change is irrelevant</item>
+        <item>Heavy Pro-2nd Amendment</item>
+        <item>Anti-ObamaCare</item>
+        <item>Solve immigration through guest workers</item>
+    </string-array>
+    <string-array formatted="false" name="CarsonForeignPolicy">
+        <item>Back Israel, obey Netanyahu over Iran</item>
+        <item>Aggressively destroy ISIL</item>
+    </string-array>
+    <string-array formatted="false" name="CarsonFaults">
+        <item>Claimed ObamaCare is the worst thing since slavery</item>
+        <item>Received backlash for comparing gays to pedophilia and bestiality</item>
+        <item>Mild mannered speaking (political opposite of shouting)</item>
+    </string-array>
+    <string-array formatted="false" name="CarsonRecord">
+    </string-array>
+
+
+
+    <!--Fiorina-->
+    <string-array formatted="false" name="FiorinaDescription">
+        <item>Hewlett-Packard CEO</item>
+        <item>California Senator</item>
+        <item>President of Lucent Technologies</item>
+        <item>AT&amp;T Senior vice-president</item>
+        <item>Net Worth: $59,000,000</item>
+        <item>Nondenominational Christianity</item>
+        <item>Breast cancer survivor</item>
+        <item>61 F</item>
+    </string-array>
+    <string-array formatted="false" name="FiorinaStrategy">
+        <item>Must portray her leadership at HP as economically sufficient</item>
+        <item>Appeal to Women voters</item>
+        <item>Making gains in Iowa</item>
+        <item>Losing edge as non-politician as poll numbers fall</item>
+    </string-array>
+    <string-array formatted="false" name="FiorinaEconomyPlans">
+        <item>State minimum wage more logical than Federal minimum wage, as economic conditions vary by location</item>
+        <item>Opposes Net Neutrality</item>
+        <item>Condemned Dodd-Frank</item>
+        <item>Reduce federal spending</item>
+        <item>Eliminate estate tax and capital gains taxes for investments and small businesses as well as marginal tax rates</item>
+    </string-array>
+    <string-array formatted="false" name="FiorinaSocialIssues">
+        <item>Pro-life after 20 weeks, except for rape, incest, or danger to the life of mother</item>
+        <item>Defund Planned Parenthood</item>
+        <item>Acknowledged existence of climate change by human activity, but government cannot change issue</item>
+        <item>Drug addiction shouldn\'t be criminalized</item>
+        <item>Against legalizing marijuana, but up to states</item>
+        <item>Critic of Common Core</item>
+        <item>Immigration must happen legally</item>
+        <item>Paid maternity leave should be voluntary</item>
+        <item>Strong supporter of 2nd-amendment</item>
+    </string-array>
+    <string-array formatted="false" name="FiorinaForeignPolicy">
+        <item>Against nuclear deal with Iran</item>
+        <item>Need allies to defeat ISIS</item>
+    </string-array>
+    <string-array formatted="false" name="FiorinaFaults">
+        <item>HP board of directors forced Fiorina to resign as CEO due to declining stock value,
+        low earning reports, and resistance to transferring authority</item>
+        <item>Controversial acquisition of Compaq Computer while at HP</item>
+        <item>Blamed failures at HP on glass ceiling, later rescind</item>
+    </string-array>
+    <string-array formatted="false" name="FiorinaRecord">
+        <item>Opposed ObamaCare</item>
+        <item>Opposed federal stimulus package of 2009</item>
+        <item>Voted for Proposition 8 in 2009, which banned gay marriage in CA</item>
+        <item>Voted for DREAM Act</item>
+    </string-array>
+
+
+
+
+    <!--Rubio-->
+    <string-array formatted="false" name="RubioDescription">
+        <item>Speaker of the Florida House of Representative</item>
+        <item>Florida Senator</item>
+        <item>Net Worth: $440,000</item>
+        <item>Roman Catholic</item>
+        <item>44 M</item>
+    </string-array>
+    <string-array formatted="false" name="RubioStrategy">
+        <item>Carried out American Dream from humble origins</item>
+        <item>The best way to get known is through his tax plan</item>
+        <item>Must appeal to hispanic voters</item>
+    </string-array>
+    <string-array formatted="false" name="RubioEconomyPlans">
+        <item>Opposed Obama\'s stimulus package of 2009</item>
+        <item>Simplified 2-bracket tax code: 15% under and 35% over $75,000</item>
+        <item>Oppose Obama\'s stimulus package</item>
+        <item>Disapprove of deficit</item>
+        <item>Lower corporate tax rate</item>
+        <item>Give minimum wage subsidies, not raise minimum wage</item>
+        <item>Grow the middle class, not government</item>
+        <item>Extend Bush tax cuts, even for wealthy</item>
+        <item>No one should pay higher taxes in recession</item>
+        <item>Replace all property taxes by adding 2.5% to sales tax</item>
+        <item>Against capital gains tax</item>
+        <item>Supports Taxpayer Protection Pledge, or a pledge to oppose any and all tax increases</item>
+        <item>Fix poverty with small government</item>
+        <item>Tax-free zones in downtrodden inner-city areas</item>
+    </string-array>
+    <string-array formatted="false" name="RubioSocialIssues">
+        <item>Pro-Life</item>
+        <item>Against legalization of marijuana</item>
+        <item>Argues human activity does not play a major role in global warming</item>
+        <item>Supports Social Security</item>
+        <item>Tax breaks for businesses that offer employees paid family leave</item>
+        <item>Leave gay marriage to states</item>
+        <item>Against recreational marijuana</item>
+        <item>Less federal and more local control of education</item>
+        <item>Pro 2nd amendment</item>
+        <item>Mandatory vaccination</item>
+        <item>Supports his alternative to ObamaCare</item>
+        <item>Against amnesty for illegal immigrants</item>
+        <item>Curtail Social Security</item>
+    </string-array>
+    <string-array formatted="false" name="RubioForeignPolicy">
+        <item>Free and fair trade</item>
+        <item>Preserve Latin American alliances</item>
+        <item>More liberty for the Cuban people</item>
+        <item>Private assistance to Jordan to prepare for ISIS</item>
+        <item>Use US air support for Sunni forces fighting ISIS</item>
+        <item>Denuclearize the peninsula and unify it</item>
+        <item>Intervention in Libya</item>
+        <item>Sanction Syria</item>
+    </string-array>
+    <string-array formatted="false" name="RubioFaults">
+        <item>Rubio-Lee tax plan criticized by both Republicans and Democrats as harmful fpr the deficit</item>
+        <item>Attacked for dismal personal finances and debt</item>
+        <item>Allegations of using party credit cards for personal use without full reimbursement</item>
+        <item>Corruption in Florida State House</item>
+        <item>Defended his friendship David Rivera</item>
+    </string-array>
+    <string-array formatted="false" name="RubioRecord">
+        <item><b>B+</b> Rating by NRA</item>
+        <item>Voted against Violence Against Women Act stating he largely supported it but objected to certain provisions</item>
+        <item>Voted against funding stem cell research</item>
+        <item>Voted against protecting ocean, coastal, and Great Lakes ecosystems</item>
+        <item>Voted against authorizing states to collect Internet sales taxes</item>
+        <item>Voted for the restricted EPA from regulating greenhouse gases</item>
+        <item>Voted for the Ryan Budget: Medicare choice, tax and spending cuts</item>
+    </string-array>
+
+
+
+
+    <!--Bush-->
+    <string-array formatted="false" name="BushDescription">
+        <item>Governor of Florida</item>
+        <item>Net Worth: $1,300,000</item>
+        <item>Roman Catholic</item>
+        <item>62 M</item>
+    </string-array>
+    <string-array formatted="false" name="BushStrategy">
+        <item>Must face-off successfully against Trump</item>
+        <item>Separate himself from his brother</item>
+        <item>Slight lead with Hispanic voters</item>
+        <item>Must win in New Hampshire primary</item>
+    </string-array>
+    <string-array formatted="false" name="BushEconomyPlans">
+        <item>Against liberal stimulus package</item>
+        <item>Cut taxes on job creators</item>
+        <item>Free-market, pro-development, pro-growth philosophy</item>
+        <item>Cut taxes by $1 billion</item>
+        <item>No national sales tax or VAT</item>
+    </string-array>
+    <string-array formatted="false" name="BushSocialIssues">
+        <item>Defund Planned Parenthood</item>
+        <item>Restrict abortions to incest, rape, and health</item>
+        <item>Against gay rights</item>
+        <item>Opposed marijuana</item>
+        <item>Does not support feminism</item>
+        <item>Global warming skeptic</item>
+        <item>Build XL pipeline and embrace energy revolution</item>
+        <item>Supports Affirmative Action, against quotas</item>
+        <item>Supports capital punishment</item>
+        <item>Supports Common Core, contrary to GOP</item>
+        <item>Instant background check</item>
+        <item>Path to Citizenship</item>
+        <item>Maintain Social Security</item>
+    </string-array>
+    <string-array formatted="false" name="BushForeignPolicy">
+        <item>Give Israel weapons to intimidate Iran</item>
+        <item>Against Obama\'s nuclear deal</item>
+        <item>Expand US troops in countries near Russia</item>
+        <item>Cooperate with China</item>
+        <item>Called ISIS a result of Iraq withdrawal</item>
+    </string-array>
+    <string-array formatted="false" name="BushFaults">
+        <item>Openly admitted to having smoked marijuana</item>
+        <item>Received criticism from Trump over Mexican wife influencing relaxed immigration stance</item>
+        <item>Criticized for speaking Spanish at certain campaign spots</item>
+        <item>Criticized for stating Illegal Immigration is an Act of Love</item>
+        <item>Praised Hillary Clinton in 2013</item>
+    </string-array>
+    <string-array formatted="false" name="BushRecord">
+        <item>Stand Your Ground bill</item>
+        <item>Supports DREAM Act</item>
+    </string-array>
+
+
+
+
+    <!--Cruz-->
+    <string-array formatted="false" name="CruzDescription">
+        <item>Texas Senator</item>
+        <item>Net Worth: $1,500,000</item>
+        <item>Southern Baptist</item>
+        <item>44 M</item>
+    </string-array>
+    <string-array formatted="false" name="CruzStrategy">
+        <item>Third in Iowa</item>
+        <item>Behind in New Hampshire and South Carolina</item>
+        <item>Unlikely to win Massachussetts</item>
+        <item>Appeal to Christian conservatives</item>
+    </string-array>
+    <string-array formatted="false" name="CruzEconomyPlans">
+        <item>Against raising minimum wage</item>
+        <item>Against top 1% over workers</item>
+        <item>Abolish the IRS</item>
+        <item>Opposes increasing tax rates</item>
+        <item>Supports eliminating the inheritance tax</item>
+        <item>Supports market recovery instead of stimulus</item>
+        <item>Supports free trade</item>
+    </string-array>
+    <string-array formatted="false" name="CruzSocialIssues">
+        <item>Pro-Life</item>
+        <item>Against LGBT</item>
+        <item>Supports capital punishment</item>
+        <item>Denounce Common Core</item>
+        <item>Pro 2nd amendment</item>
+        <item>Against ObamaCare</item>
+        <item>Against illegal immigration amnesty</item>
+        <item>Curtail Social Security</item>
+        <item>Against Net neutrality</item>
+        <item>Against welfare</item>
+        <item>Against green energy</item>
+    </string-array>
+    <string-array formatted="false" name="CruzForeignPolicy">
+        <item>Bomb ISIS back to the Stone Age</item>
+        <item>Against war in Iraq</item>
+        <item>Against war in Afghanistan</item>
+        <item>Sanction Putin, help eastern Ukraine</item>
+        <item>Cuba is oppressive</item>
+    </string-array>
+    <string-array formatted="false" name="CruzFaults">
+        <item>Tweeted insult joke against Biden during mourning</item>
+        <item>#TedCruzCrimes</item>
+    </string-array>
+    <string-array formatted="false" name="CruzRecord">
+        <item>Voted against Violence Against Women Act</item>
+    </string-array>
+
+
+
+
+    <!--Kasich-->
+    <string-array formatted="false" name="KasichDescription">
+        <item>Governor of Ohio</item>
+        <item>Ohio House of Representatives</item>
+        <item>Net Worth: $2,500,000</item>
+        <item>Anglican</item>
+        <item>63 M</item>
+    </string-array>
+    <string-array formatted="false" name="KasichStrategy">
+        <item>Smooth temper, keep level speech</item>
+        <item>Reference his history in Ohio</item>
+        <item>End racial tensions</item>
+    </string-array>
+    <string-array formatted="false" name="KasichEconomyPlans">
+        <item>No income taxes on small businesses up to $2 million</item>
+        <item>Relieve student debt with $120 million fund</item>
+        <item>$3 billion in tax cuts for job creators</item>
+    </string-array>
+    <string-array formatted="false" name="KasichSocialIssues">
+        <item>Pro-life except rape and incest</item>
+        <item>Attended a gay wedding</item>
+        <item>Supports capital punishment</item>
+        <item>Raise tax on oil and gas</item>
+        <item>Opposes restrictions on 2nd amendment</item>
+        <item>Against ObamaCare</item>
+        <item>Reluctant pathway to citizenship</item>
+    </string-array>
+    <string-array formatted="false" name="KasichForeignPolicy">
+        <item>Focus on terrorism, oil, and nuclear development</item>
+    </string-array>
+    <string-array formatted="false" name="KasichFaults">
+        <item>Seen as very moderate</item>
+        <item>Not well known</item>
+    </string-array>
+    <string-array formatted="false" name="KasichRecord">
+        <item>Voted for banning partial-birth abortions</item>
+        <item>Voted for banning gay adoptions</item>
+        <item>Voted for ending preferential treatment by race in college admissions</item>
+        <item>Voted for reducing Social Security benefits</item>
+        <item>Voted for $46 billion in tax cuts for small businesses</item>
+        <item>Voted against withdrawing from the WTO</item>
+    </string-array>
+
+
+
+    <!--Huckabee-->
+    <string-array formatted="false" name="HuckabeeDescription">
+        <item>Governor of Arkansas</item>
+        <item>Net Worth: $5,000,000</item>
+        <item>Southern Baptist</item>
+        <item>60 M</item>
+    </string-array>
+    <string-array formatted="false" name="HuckabeeStrategy">
+        <item>Twitter against Hillary Clinton and DNC</item>
+        <item>Very heavy appeal to the religious</item>
+    </string-array>
+    <string-array formatted="false" name="HuckabeeEconomyPlans">
+        <item>Infrastructure</item>
+        <item>Cut spending</item>
+        <item>Fight Wall St.\'s control of Washington</item>
+        <item>Stop class warfare</item>
+        <item>Help blacks fight racism and unequal opportunity in job market</item>
+        <item>FairTax to remove IRS and sift power back to states</item>
+        <item>Support Bush tax cuts</item>
+    </string-array>
+    <string-array formatted="false" name="HuckabeeSocialIssues">
+        <item>Heavy pro-life</item>
+        <item>Pro capital punishment</item>
+        <item>Against gay marriage</item>
+        <item>Stricter penalties on drug abuse</item>
+        <item>Against Common Core</item>
+        <item>Does not believe in climate change</item>
+        <item>Pro 2nd amendment</item>
+        <item>Do not allow kids to listen to toxic music like Beyonce</item>
+        <item>Pro vaccination</item>
+        <item>Against ObamaCare</item>
+        <item>Let illegal immigrant kids in college despite parents\' crime</item>
+        <item>Build a border fence</item>
+    </string-array>
+    <string-array formatted="false" name="HuckabeeForeignPolicy">
+        <item>Support Israel</item>
+        <item>Against Trans Pacific Partnership</item>
+        <item>Free and fair trade</item>
+        <item>Stay in Iraq</item>
+    </string-array>
+    <string-array formatted="false" name="HuckabeeFaults">
+        <item>Seen as Islamophobic</item>
+        <item>Under fire from Republicans for supporting Kim Davis after Supreme Court ruling</item>
+    </string-array>
+    <string-array formatted="false" name="HuckabeeRecord">
+        <item>Voter approved tax increases</item>
+    </string-array>
+
+
+
+    <!--Christie-->
+    <string-array formatted="false" name="ChristieDescription">
+        <item>Governor of New Jersey</item>
+        <item>Net Worth: $4,000,000</item>
+        <item>Roman Catholic</item>
+        <item>53 M</item>
+    </string-array>
+    <string-array formatted="false" name="ChristieStrategy">
+        <item>Rambunctious speaking</item>
+        <item>Target middle-income workers</item>
+        <item>Focus on New Jersey job growth</item>
+        <item>Make clear his role after 9/11</item>
+        <item>Attract traditional Democratic voters</item>
+    </string-array>
+    <string-array formatted="false" name="ChristieEconomyPlans">
+        <item>Do not raise minimum wage, create better-paying jobs</item>
+        <item>Focus on reducing unemployment</item>
+        <item>Simplify tax code to three brackets, the highest at 28%</item>
+        <item>Must lower taxes</item>
+        <item>Cut welfare</item>
+    </string-array>
+    <string-array formatted="false" name="ChristieSocialIssues">
+        <item>Pro-life</item>
+        <item>Against gay marriage, but will obey the law</item>
+        <item>Rewrite tax system to bring back corporations from overseas</item>
+        <item>Free bail for nonviolent</item>
+        <item>Against medical marijuana</item>
+        <item>Used to support Common Core, now regret</item>
+        <item>Supports windmills and renewable energy</item>
+        <item>Against gun control except from law-enforcement perspective</item>
+        <item>Kids should be vaccinated</item>
+        <item>ObamaCare as a mistake</item>
+        <item>No pathway to citizenship, but college tuition for illegals</item>
+    </string-array>
+    <string-array formatted="false" name="ChristieForeignPolicy">
+        <item>Strong anti-terrorism</item>
+        <item>Isolationism is dangerous</item>
+        <item>Send American troops to fight ISIL</item>
+        <item>Finish the job in Syria</item>
+        <item>Do not pull troops out of Afghanistan</item>
+    </string-array>
+    <string-array formatted="false" name="ChristieFaults">
+        <item>Turns off Republican voters with blowhard speaking</item>
+        <item>Abysmal approval rating towards end of  term</item>
+    </string-array>
+    <string-array formatted="false" name="ChristieRecord">
+        <item>Vote down school budgets</item>
+    </string-array>
+
+
+
+
+    <!--Paul-->
+    <string-array formatted="false" name="PaulDescription">
+        <item>Known as Libertarian</item>
+        <item>Senator of Kentucky</item>
+        <item>Net Worth: $2,500,000</item>
+        <item>Presbyterianism</item>
+        <item>52 M</item>
+    </string-array>
+    <string-array formatted="false" name="PaulStrategy">
+        <item>Hitch onto the popularity of Ron Paul</item>
+        <item>Target western states</item>
+        <item>Turned away Koch brothers fundings</item>
+    </string-array>
+    <string-array formatted="false" name="PaulEconomyPlans">
+        <item>Freeze debt by sequestration</item>
+        <item>Cut corporate tax in half to create millions of jobs</item>
+        <item>No more tax reform</item>
+        <item>Supports flat, single-rate federal tax</item>
+        <item>Economic freedom zones or low taxes in high unemployment areas</item>
+    </string-array>
+    <string-array formatted="false" name="PaulSocialIssues">
+        <item>Women no longer downtrodden</item>
+        <item>Gay marriage to the states</item>
+        <item>Opposes affirmative action</item>
+        <item>Against marijuana legalization, but in favor of medical and industrial hemp</item>
+        <item>Do not prioritize green energy</item>
+        <item>Pro 2nd amendment</item>
+    </string-array>
+    <string-array formatted="false" name="PaulForeignPolicy">
+        <item>Stay out of Iran</item>
+        <item>America has little involvement in ISIS</item>
+    </string-array>
+    <string-array formatted="false" name="PaulFaults">
+        <item>Media is against him</item>
+        <item>Considered soft on ISIS</item>
+    </string-array>
+    <string-array formatted="false" name="PaulRecord">
+        <item>Voted against Violence Against Women Act</item>
+        <item>Voted against protecting ocean, coastal, and Great Lakes ecosystems</item>
+        <item>Voted against banning high-capacity guns</item>
+        <item>Voted against the Ryan Budget</item>
+        <item>Voted for barring EPA from regulating greenhouse gases</item>
+    </string-array>
+
+
+
+
+    <!--Jindal-->
+    <string-array formatted="false" name="JindalDescription">
+        <item>Governor of Louisiana</item>
+        <item>Louisiana House of Representatives</item>
+        <item>Net Worth: $2,700,000</item>
+        <item>Roman Catholic</item>
+        <item>44 M</item>
+    </string-array>
+    <string-array formatted="false" name="JindalStrategy">
+        <item>Struggle to make the debate stage</item>
+        <item>Attract big donors</item>
+        <item>Suspect to win Iowa</item>
+    </string-array>
+    <string-array formatted="false" name="JindalEconomyPlans">
+        <item>Allow stockholder voting on executive compensation</item>
+        <item>Lower taxes</item>
+        <item>Taxpayer Protection Pledge</item>
+    </string-array>
+    <string-array formatted="false" name="JindalSocialIssues">
+        <item>Pro-life</item>
+        <item>Against gay marriage</item>
+        <item>Hard on drugs</item>
+        <item>Support drill</item>
+        <item>HealthCare is a right but instrument is the marketplace</item>
+        <item>Build a fence along Mexican border</item>
+    </string-array>
+    <string-array formatted="false" name="JindalForeignPolicy">
+        <item>Deter foreign arms transfers to China</item>
+        <item>Reform the UN by restricting US funding</item>
+    </string-array>
+    <string-array formatted="false" name="JindalFaults">
+        <item>Does not stand out</item>
+        <item>Low poll numbers</item>
+    </string-array>
+    <string-array formatted="false" name="JindalRecord">
+        <item>Voted against $84 million in grants for Black and Hispanic colleges</item>
+        <item>Voted against Central America Free Trade</item>
+        <item>Voted for increasing minimum wage to $7.25</item>
+    </string-array>
+
+
+
+    <!--Santorum-->
+    <string-array formatted="false" name="SantorumDescription">
+        <item>Pennsylvania Senator</item>
+        <item>Pennsylvania House of Representatives</item>
+        <item>CEO of EchoLight Studios</item>
+        <item>Net Worth: $880,000</item>
+        <item>Roman Catholicism</item>
+        <item>57 M</item>
+    </string-array>
+    <string-array formatted="false" name="SantorumStrategy">
+        <item>Has experience from 2012 GOP caucuses</item>
+        <item>Previously spoken in all 99 counties of Iowa</item>
+    </string-array>
+    <string-array formatted="false" name="SantorumEconomyPlans">
+        <item>Opposed Wall St. and Auto bailout</item>
+        <item>Fannie and Freddie should create housing affordability</item>
+        <item>Reduce corporate tax to flat rate of 20%</item>
+        <item>Fewer than 1% of Americans earn minimum wage; let it go up</item>
+        <item>20/20 tax plan: all income trated the same</item>
+        <item>Two income tax rates: 10% and 28%</item>
+    </string-array>
+    <string-array formatted="false" name="SantorumSocialIssues">
+        <item>Against abortion</item>
+        <item>Against LGBT</item>
+        <item>Get government out of our school</item>
+        <item>Slash Common Core</item>
+        <item>US cannot affect global warming</item>
+        <item>Pro fracking</item>
+        <item>ObamaCare wastes $500 million</item>
+        <item>Keep immigration waiting</item>
+        <item>401(k) approach would provide better benefits than Social Security</item>
+    </string-array>
+    <string-array formatted="false" name="SantorumForeignPolicy">
+        <item>Assassinate Iranian and North Korean nuclear scientists</item>
+        <item>Promote free trade</item>
+        <item>Pro military</item>
+        <item>Send US troops to combat ISIS</item>
+        <item>Withdraw from Afghanistan more slowly</item>
+    </string-array>
+    <string-array formatted="false" name="SantorumFaults">
+        <item>Smoked pot in college, regret</item>
+        <item>Low poll numbers</item>
+    </string-array>
+    <string-array formatted="false" name="SantorumRecord">
+        <item><b>A+</b> NRA rating</item>
+        <item>Voted for $40 billion in reduced federal overall spending</item>
+        <item>Voted for prioritizing national debt reduction below tax cuts</item>
+        <item>Voted for 1998 GOP budget</item>
+        <item>Voted for defunding renewable and solar energy</item>
+        <item>Voted for approving nuclear waste repository</item>
+    </string-array>
+
+
+    <!--Graham-->
+    <string-array formatted="false" name="GrahamDescription">
+        <item>South Carolina Senator</item>
+        <item>South Carolina House of Representatives</item>
+        <item>Net Worth: $15,000,000</item>
+        <item>Southern Baptist</item>
+        <item>60 M</item>
+    </string-array>
+    <string-array formatted="false" name="GrahamStrategy">
+        <item>Luck</item>
+    </string-array>
+    <string-array formatted="false" name="GrahamEconomyPlans">
+        <item>Cut spending to raise debt ceiling</item>
+        <item>Pro business</item>
+        <item>Pro free trade</item>
+        <item>Anti-union voting record</item>
+        <item>Against increasing tax rates</item>
+    </string-array>
+    <string-array formatted="false" name="GrahamSocialIssues">
+        <item>Pro life</item>
+        <item>Anti affirmative action</item>
+        <item>Pro capital punishment</item>
+        <item>Against Common Core</item>
+        <item>Greenhouse gas is a problem, but EPA should not regulate</item>
+        <item>Pro 2nd amendment</item>
+        <item>Oppose ObamaCare</item>
+        <item>Build a fence along the Mexican border</item>
+        <item>Establish a Guest Worker program</item>
+    </string-array>
+    <string-array formatted="false" name="GrahamForeignPolicy">
+        <item>Sanction North Korea and Russia</item>
+        <item>Pressure Iranian government</item>
+        <item>Pro military intervention</item>
+    </string-array>
+    <string-array formatted="false" name="GrahamFaults">
+        <item>Never sent an email</item>
+        <item>Low poll numbers</item>
+    </string-array>
+    <string-array formatted="false" name="GrahamRecord">
+        <item>Voted against Violence Against Women Act</item>
+        <item>Voted for Bush tax cuts</item>
+    </string-array>
+
+
+
+
+    <!--Pataki-->
+    <string-array formatted="false" name="PatakiDescription">
+        <item>Mayor of Peekskill</item>
+        <item>New York State Assembly</item>
+        <item>New York Governor</item>
+        <item>New York Senator</item>
+        <item>Net Worth: $1,200,000,000</item>
+        <item>Roman Catholic</item>
+        <item>70 M</item>
+    </string-array>
+    <string-array formatted="false" name="PatakiStrategy">
+        <item>Poll edge in New York</item>
+        <item>Behind in Iowa</item>
+        <item>Play the "Trump Card" to get noticed</item>
+    </string-array>
+    <string-array formatted="false" name="PatakiEconomyPlans">
+        <item>Cut taxes and cut spending</item>
+        <item>12% manufacturing tax rate</item>
+    </string-array>
+    <string-array formatted="false" name="PatakiSocialIssues">
+        <item>Pro-choice, but ban abortion after 20 weeks</item>
+        <item>Opposes gay marriage but supports gay and lesbian rights</item>
+        <item>Marijuana legalization by state</item>
+        <item>Against Common Core</item>
+        <item>Invest in math and science innovation</item>
+        <item>Climate change is real</item>
+        <item>Set goal of 25% renewable energy by 2025</item>
+        <item>Pro Free Trade</item>
+        <item>Supports gun control</item>
+        <item>Repeal ObamaCare</item>
+        <item>Immigrants may come to work, go easy on immigrant children</item>
+    </string-array>
+    <string-array formatted="false" name="PatakiForeignPolicy">
+        <item>Tough on Iran and Palestine</item>
+        <item>US troops to fight ISIS</item>
+    </string-array>
+    <string-array formatted="false" name="PatakiFaults">
+        <item>Very moderate</item>
+    </string-array>
+    <string-array formatted="false" name="PatakiRecord">
+        <item>Voted to cut off Medicaid abortion funding</item>
+    </string-array>
+
+
+
+    <!--Gilmore-->
+    <string-array formatted="false" name="GilmoreDescription">
+        <item>Virginia Governor</item>
+        <item>Attorney General of Virginia</item>
+        <item>Methodism</item>
+        <item>66 M</item>
+    </string-array>
+    <string-array formatted="false" name="GilmoreStrategy">
+        <item>Gilmore entered the race late in the game</item>
+        <item>Has not held formal campaign events with actual voters</item>
+        <item>No handshakes in Iowa, rallies in New Hampshire, or kickoff rally</item>
+    </string-array>
+    <string-array formatted="false" name="GilmoreEconomyPlans">
+        <item>Right to abortion in the first 8-12 weeks of pregnancy</item>
+        <item>More banking oversight</item>
+        <item>Income tax 25%, business tax 15%, death tax 0%</item>
+        <item>Undecided on FairTax and flat tax</item>
+    </string-array>
+    <string-array formatted="false" name="GilmoreSocialIssues">
+        <item>Against LGBT</item>
+        <item>Against illegal drugs</item>
+        <item>Supports drilling</item>
+        <item>Supporter of 2nd amendment rights</item>
+        <item>No federal health plan regulation</item>
+        <item>Strike down illegal immigration</item>
+        <item>Against unions</item>
+        <item>Praises Bush leadership on Social Security</item>
+    </string-array>
+    <string-array formatted="false" name="GilmoreForeignPolicy">
+        <item>Create a Middle East NATO to fight both Iran and ISIL</item>
+        <item>No troop increase without mission</item>
+        <item>Pursue terrorists into Pakistan, but maintain secrecy</item>
+    </string-array>
+    <string-array formatted="false" name="GilmoreFaults">
+        <item>"Hermit candidate"</item>
+    </string-array>
+    <string-array formatted="false" name="GilmoreRecord">
+        <item>In favor of raising teacher pay</item>
+        <item>Support traditional African-African universities</item>
+    </string-array>
+
 </resources>

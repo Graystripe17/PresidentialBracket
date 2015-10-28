@@ -4,6 +4,9 @@
     <color name="primary_dark">#ff0000ff</color>
     <color name="accent">#ffffffff</color>
 
+    <color name="backdrop">#ff695c68</color>
+    <color name="backdrop_shadow">#ff4b3e49</color>
+
 
     <color name="R1">#ffff0000</color>
     <color name="R2">#ffff0a0a</color>
@@ -21,6 +24,13 @@
     <color name="R14">#ffff39dd</color>
     <color name="R15">#ffff1edc</color>
     <color name="R16">#ffff00ec</color>
+    <color name="D1">#ff0300ff</color>
+    <color name="D2">#ff3635ff</color>
+    <color name="D3">#ff5e57ff</color>
+    <color name="D4">#ff94b1ff</color>
+    <color name="D5">#ff49d8ff</color>
+    <color name="D6">#ff00e8ff</color>
+
     <array name="red_rainbow">
         <item>@color/R1</item>
         <item>@color/R2</item>
@@ -39,4 +49,14 @@
         <item>@color/R15</item>
         <item>@color/R16</item>
     </array>
+
+    <array name="blue_rainbow">
+        <item>@color/D1</item>
+        <item>@color/D2</item>
+        <item>@color/D3</item>
+        <item>@color/D4</item>
+        <item>@color/D5</item>
+        <item>@color/D6</item>
+    </array>
+
 </resources>

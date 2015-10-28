@@ -87,7 +87,12 @@ public class MyFragment extends Fragment {
         LinearLayout l = (LinearLayout) inflater.inflate(R.layout.mf, container, false);
 
         TextView tv = (TextView) l.findViewById(R.id.CandidateName);
-        tv.setText(candidate.toUpperCase() + Integer.toString(pos));
+        tv.setText(candidate.toUpperCase());
+        if(isRepublican) {
+            tv.setTextColor(getResources().getIntArray(R.array.red_rainbow)[pos % Carousel.Republican.length]);
+        } else {
+            tv.setTextColor(getResources().getIntArray(R.array.blue_rainbow)[pos % Carousel.Republican.length]);
+        }
 
         Button candidateButtonIcon = (Button) l.findViewById(R.id.content);
         // final Drawable faceDrawable = getDrawableFromMemCache(candidate);
@@ -193,7 +198,8 @@ public class MyFragment extends Fragment {
                     return getResources().getDrawable(R.drawable.walker, null);
                 case "Perry":
                     return getResources().getDrawable(R.drawable.perry, null);
-
+                case "Gilmore":
+                    return getResources().getDrawable(R.drawable.gilmore, null);
                 // Cannot find; return cat
                 default:
                     return getResources().getDrawable(R.drawable.cat, null);

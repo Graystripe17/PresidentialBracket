@@ -11,5 +11,8 @@
         android:id="@+id/listTitle"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:paddingLeft="4sp" />
+        android:paddingLeft="2sp"
+        android:paddingRight="4sp"
+        android:paddingTop="4sp"
+        android:paddingBottom="2sp" />
 </LinearLayout>

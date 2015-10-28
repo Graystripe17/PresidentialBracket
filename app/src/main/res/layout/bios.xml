@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/backdrop">
 
     <TextView
         android:layout_width="wrap_content"
@@ -9,7 +10,8 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Candidate"
         android:id="@+id/Candidate"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal"
+        android:textSize="30sp" />
 
     <TabHost
         android:layout_width="fill_parent"
@@ -21,6 +23,7 @@
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+
             <TabWidget
                 android:id="@android:id/tabs"
                 android:layout_width="match_parent"
@@ -54,20 +57,28 @@
                                 android:layout_height="match_parent"
                                 android:orientation="vertical">
 
-                                <EditText
+                                <LinearLayout
+                                    android:orientation="horizontal"
                                     android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:inputType="textMultiLine"
-                                    android:ems="10"
-                                    android:id="@+id/comment" />
+                                    android:layout_height="wrap_content">
 
-                                <Button
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Post Comment"
-                                    android:id="@+id/Post"
-                                    android:onClick="onClick"
-                                    android:layout_gravity="right" />
+                                    <Button
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Post"
+                                        android:id="@+id/Post"
+                                        android:onClick="onClick"
+                                        android:layout_gravity="right" />
+
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:inputType="textMultiLine"
+                                        android:ems="10"
+                                        android:id="@+id/comment"
+                                        android:layout_gravity="left" />
+
+                                </LinearLayout>
 
                                 <ListView
                                     android:layout_width="match_parent"

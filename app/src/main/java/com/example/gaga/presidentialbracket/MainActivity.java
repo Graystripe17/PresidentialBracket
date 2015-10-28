@@ -42,9 +42,6 @@ public class MainActivity extends AppCompatActivity implements AsyncTaskComplete
         populateListView();
         registerClickCallback();
 
-        usernameField = (EditText)findViewById(R.id.editTextUN);
-        passwordField = (EditText)findViewById(R.id.editTextPW);
-        status = (TextView)findViewById(R.id.textStatus);
         Handle = (EditText)findViewById(R.id.UserName);
 
         SharedPreferences prefs = getSharedPreferences("UN", MODE_PRIVATE);
@@ -57,7 +54,6 @@ public class MainActivity extends AppCompatActivity implements AsyncTaskComplete
             // An existing name
             Intent intent1 = new Intent(this, nextActivity.class);
             intent1.putExtra("UN", restoredText);
-            intent1.putExtra("PosterID", PosterID);
             this.startActivity(intent1);
         } else {
             // New User!
@@ -87,9 +83,10 @@ public class MainActivity extends AppCompatActivity implements AsyncTaskComplete
         saveUNSharedPrefs(UN);
 
         addUser(UN);
-
-        // TODO: DELETE THIS COMMENT
-        // new PostComment(this).execute(UN);
+        username = UN;
+        Intent GO = new Intent(this, nextActivity.class);
+        GO.putExtra("UN", UN);
+        this.startActivity(GO);
     }
 
     private void populateListView() {

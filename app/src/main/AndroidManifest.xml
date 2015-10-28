@@ -7,10 +7,11 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme"
-        android:largeHeap="true" >
+        android:largeHeap="true"
+        android:screenOrientation="portrait">
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -35,8 +36,9 @@
 
         <activity
             android:name=".Carousel"
-            android:label="@string/Carousel" >
-            android:parentActivityName="com.example.gaga.presidentialbracket.MainActivity" >
+            android:label="@string/Carousel"
+            >
+            android:parentActivityName="com.example.gaga.presidentialbracket.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.gaga.presidentialbracket.MainActivity" />
@@ -44,8 +46,9 @@
 
         <activity
             android:name=".Bios"
-            android:label="Presidential Candidates" >
-            android:parentActivityName="com.example.gaga.presidentialbracket.nextActivity" >
+            android:label="Presidential Candidates"
+            android:background="@color/backdrop">
+            android:parentActivityName="com.example.gaga.presidentialbracket.nextActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.gaga.presidentialbracket.nextActivity" />

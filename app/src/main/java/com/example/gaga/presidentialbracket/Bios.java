@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
@@ -17,7 +18,11 @@ import android.widget.TabHost;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.net.URL;
@@ -33,6 +38,9 @@ import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+
 
 public class Bios extends AppCompatActivity implements View.OnClickListener {
 
@@ -46,12 +54,13 @@ public class Bios extends AppCompatActivity implements View.OnClickListener {
 
     // Create list of items
     String[] Categories = {
-            "Description", // Tag line
-            "Specs", // Polls
-            "Stats", // Years, speaking style, scandals
-            "Plans", // Ideology
-            "Weakness", // Scandals
-            "Record", // History and voting
+            "Description",
+            "Strategy",
+            "EconomyPlans",
+            "SocialIssues",
+            "ForeignPolicy",
+            "Faults",
+            "Record",
     };
 
     ArrayList<Comment> commentArrayList;
@@ -96,7 +105,7 @@ public class Bios extends AppCompatActivity implements View.OnClickListener {
 
         // Change header title
         TextView TITLE = (TextView) findViewById(R.id.Candidate);
-        TITLE.setText(candidate.toUpperCase());
+        TITLE.setText(getFullNameGivenName(candidate));
 
         // Start DownloadComments
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
@@ -148,6 +157,8 @@ public class Bios extends AppCompatActivity implements View.OnClickListener {
                     }
                 }
                 commentHandler.setText("");
+                Toast.makeText(context, "Sent", Toast.LENGTH_SHORT).show();
+
                 break;
             default:
                 break;
@@ -159,13 +170,10 @@ public class Bios extends AppCompatActivity implements View.OnClickListener {
         // Prepare LDH
         prepareListData();
 
-        if(nextActivity.isRepublicanByName(candidate)) {
-            adapter = new MyExpandableListAdapter(this, listDataHeader, listDataChild);
-            ExpandableListView list = (ExpandableListView) findViewById(R.id.ELVbios);
-            list.setAdapter(adapter);
-        } else {
-
-        }
+        adapter = new MyExpandableListAdapter(this, listDataHeader, listDataChild);
+        //adapter.notifyDataSetChanged();
+        ExpandableListView list = (ExpandableListView) findViewById(R.id.ELVbios);
+        list.setAdapter(adapter);
     }
 
     private void registerClickCallback() {
@@ -173,54 +181,119 @@ public class Bios extends AppCompatActivity implements View.OnClickListener {
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View viewClicked, int position, long id) {
-                TextView textView = (TextView) viewClicked;
-                String message = "You clicked #" + position + ", which is string: " + textView.getText().toString();
-                Toast.makeText(Bios.this, message, Toast.LENGTH_LONG).show();
-
-                LinearLayout discussionLL = (LinearLayout) findViewById(R.id.Discussion);
-
-                EditText newReply = new EditText(Bios.this);
-                newReply.setLayoutParams(new LinearLayout.LayoutParams(
-                        LinearLayout.LayoutParams.MATCH_PARENT,
-                        LinearLayout.LayoutParams.MATCH_PARENT
-                ));
-                newReply.setId(arbitraryIDCounter++);
-                discussionLL.addView(newReply);
-                // Remove previous expired View
-                discussionLL.removeView(findViewById(arbitraryIDCounter - 1));
+//                TextView textView = (TextView) viewClicked;
+//                String message = "You clicked #" + position + ", which is string: " + textView.getText().toString();
+//                Toast.makeText(Bios.this, message, Toast.LENGTH_LONG).show();
+//
+//                LinearLayout discussionLL = (LinearLayout) findViewById(R.id.Discussion);
+//
+//                EditText newReply = new EditText(Bios.this);
+//                newReply.setLayoutParams(new LinearLayout.LayoutParams(
+//                        LinearLayout.LayoutParams.MATCH_PARENT,
+//                        LinearLayout.LayoutParams.MATCH_PARENT
+//                ));
+//                newReply.setId(arbitraryIDCounter++);
+//                discussionLL.addView(newReply);
+//                // Remove previous expired View
+//                discussionLL.removeView(findViewById(arbitraryIDCounter - 1));
             }
         });
     }
 
     public void prepareListData() {
+        // Load description based on candidate
+        CandidateBioParagraphs cParagraphs = new CandidateBioParagraphs(candidate, this);
+
         listDataHeader = new ArrayList<String>(Arrays.asList(Categories));
         listDataChild = new HashMap<String, List<String>>();
 
-        // Add child data
-        listDataHeader.add("HEADER 1");
-        listDataHeader.add("HEADER 2");
-        listDataHeader.add("HEADER 3");
 
-        List<String> header1 = new ArrayList<String>();
-        header1.add("A");
-        header1.add("B");
+        List<String> Description = new ArrayList<String>();
+        Description.addAll(Arrays.asList(cParagraphs.Description));
 
-        List<String> header2 = new ArrayList<String>();
-        header2.add("C");
-        header2.add("D");
+        List<String> Strategy = new ArrayList<String>();
+        Strategy.addAll(Arrays.asList(cParagraphs.Strategy));
 
-        List<String> header3 = new ArrayList<String>();
-        header3.add("E");
-        header3.add("F");
+        List<String> EconomyPlans = new ArrayList<String>();
+        EconomyPlans.addAll(Arrays.asList(cParagraphs.EconomyPlans));
 
-        List<String> header4 = new ArrayList<String>();
-        header4.add("G");
-        header4.add("H");
 
-        listDataChild.put(listDataHeader.get(0), header1);
-        listDataChild.put(listDataHeader.get(1), header2);
-        listDataChild.put(listDataHeader.get(2), header3);
-        listDataChild.put(listDataHeader.get(3), header4);
+        List<String> SocialIssues = new ArrayList<String>();
+        SocialIssues.addAll(Arrays.asList(cParagraphs.SocialIssues));
+
+        List<String> ForeignPolicy = new ArrayList<String>();
+        ForeignPolicy.addAll(Arrays.asList(cParagraphs.ForeignPolicy));
+
+        List<String> Faults = new ArrayList<String>();
+        Faults.addAll(Arrays.asList(cParagraphs.Faults));
+
+        List<String> Record = new ArrayList<String>();
+        Record.addAll(Arrays.asList(cParagraphs.Record));
+
+        listDataChild.put(listDataHeader.get(0), Description);
+        listDataChild.put(listDataHeader.get(1), Strategy);
+        listDataChild.put(listDataHeader.get(2), EconomyPlans);
+        listDataChild.put(listDataHeader.get(3), SocialIssues);
+        listDataChild.put(listDataHeader.get(4), ForeignPolicy);
+        listDataChild.put(listDataHeader.get(5), Faults);
+        listDataChild.put(listDataHeader.get(6), Record);
     }
 
+    public String getFullNameGivenName (String cname) {
+        switch(cname) {
+            // Democrats
+            case "Clinton":
+                return "HILLARY RODHAM CLINTON";
+            case "Sanders":
+                return "BERNARD SANDERS";
+            case "Biden":
+                return "JOSEPH BIDEN";
+            case "Webb":
+                return "JAMES HENRY WEBB JR.";
+            case "O'Malley":
+                return "MARTIN O'MALLEY";
+            case "Chafee":
+                return "LINCOLN DAVENPORT CHAFEE";
+
+            // Republicans
+            case "Trump":
+                return "DONALD JOHN TRUMP SR.";
+            case "Carson":
+                return "BEN SOLOMON CARSON";
+            case "Fiorina":
+                return "CARA CARLETON FIORINA";
+            case "Rubio":
+                return "MARCO RUBIO";
+            case "Bush":
+                return "JOHN ELLIS BUSH";
+            case "Cruz":
+                return "RAFAEL EDWARD CRUZ";
+            case "Kasich":
+                return "JOHN RICHARD KASICH";
+            case "Huckabee":
+                return "MICHAEL DALE HUCKABEE";
+            case "Christie":
+                return "CHRISTOPHER JAMES CHRISTIE";
+            case "Paul":
+                return "RANDAL HOWARD PAUL";
+            case "Jindal":
+                return "PIYUSH JINDAL";
+            case "Santorum":
+                return "RICHARD JOHN SANTORUM";
+            case "Graham":
+                return "LINDSEY OLIN GRAHAM";
+            case "Pataki":
+                return "GEORGE ELMER PATAKI";
+            case "Walker":
+                return "SCOTT KEVIN WALKER";
+            case "Perry":
+                return "JAMES RICHARD PERRY";
+            case "Gilmore":
+                return "JAMES STUART GILMORE III";
+
+            // Cannot find; return cat
+            default:
+                return "";
+        }
+    }
 }

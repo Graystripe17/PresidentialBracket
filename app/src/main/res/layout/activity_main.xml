@@ -10,48 +10,21 @@
     <ListView
         android:layout_width="wrap_content"
         android:layout_height="100dip"
-        android:id="@+id/homeListView" />
-
-    <EditText
-        android:id="@+id/editTextPW"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/editTextUN"
-        android:layout_below="@+id/editTextUN"
-        android:layout_marginTop="25dp"
-        android:ems="10"
-        android:inputType="textPassword" >
-    </EditText>
-
-    <EditText
-        android:id="@+id/editTextUN"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/homeListView"
+        android:layout_above="@+id/loginpost"
         android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="44dp"
-        android:ems="10" >
-    </EditText>
-
-    <EditText
-        android:id="@+id/textStatus"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:layout_alignTop="@+id/homeListView"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="false">
-    </EditText>
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="25dp"
+        android:visibility="invisible" />
 
     <Button
         android:id="@+id/loginpost"
         android:layout_width="300dip"
-        android:layout_height="300dip"
+        android:layout_height="100dip"
         android:onClick="loginPost"
         android:text="@string/LoginPost"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="29dp" />
+        android:layout_below="@+id/UserName"
+        android:layout_centerHorizontal="true" />
 
     <requestFocus android:layout_width="wrap_content" />
 
@@ -59,8 +32,9 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:id="@+id/UserName"
-        android:layout_below="@+id/editTextPW"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="37dp" />
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="UserName" />
 
 </RelativeLayout>
