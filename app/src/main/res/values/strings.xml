@@ -18,13 +18,13 @@
     <string name="Biden">im bad</string>
     <string name="Webb">imma bitch</string>
     <string name="OMalley">oreilly</string>
-    <string name="Chafee">the guy above me is annoying</string>
+    <string name="Chafee">mantis</string>
 
     <!--Republicans-->
     <string name="Trump">CANT STUMP THE TRUMP</string>
     <string name="Carson">Im the only one to separate siamese twins</string>
-    <string name="Rubio">rubiks cube</string>
-    <string name="Cruz">Cruz</string>
+    <string name="Rubio">Cuban</string>
+    <string name="Cruz">Canadian</string>
     <string name="Fiorina">glass ceiling</string>
     <string name="Bush">jeb</string>
     <string name="Kasich">Kasich</string>
@@ -139,6 +139,7 @@
         <item>Supports GMOs, but require labeling</item>
         <item>Firmly votes to protect environment</item>
         <item>Black Lives Matter</item>
+        <item>"Sick and tired of hearing about [Hilary's] damn emails!"</item>
     </string-array>
     <string-array formatted="false" name="SandersForeignPolicy">
         <item>Against US ground troops in Syria</item>
@@ -155,6 +156,7 @@
         <item>Voted against tax cuts for small business in 2000</item>
         <item>Slightly to the right of Democrats in Foreign Policy</item>
         <item>Regrets 1972 "Rape Essay"</item>
+        <item>Members of team fired for obtaining Hilary campaign information, DNC against</item>
     </string-array>
     <string-array formatted="false" name="SandersRecord">
         <item>Voted against Brady Bill five times</item>
@@ -311,7 +313,7 @@
     <string-array formatted="false" name="TrumpStrategy">
         <item>Galvanize frustrated Southern States</item>
         <item>Oppose being politically correct</item>
-        <item>Attack challengers with snappy remarks</item>
+        <item>Attack challengers with snappy remarks, gain media favor</item>
         <item>Using his own money to fund his campaign</item>
         <item>Pull strings of those who he had given money to</item>
         <item>Wishes for Hispanic vote</item>
@@ -329,6 +331,7 @@
         <item>Create jobs by 0% corporate tax</item>
     </string-array>
     <string-array formatted="false" name="TrumpSocialIssues">
+        <item>Called for a temporary ban against all Muslims entering the United States</item>
         <item>Pro-life</item>
         <item>Gay marriage is a state issue</item>
         <item>Pro Capital Punishment</item>
@@ -453,6 +456,7 @@
         low earning reports, and resistance to transferring authority</item>
         <item>Controversial acquisition of Compaq Computer while at HP</item>
         <item>Blamed failures at HP on glass ceiling, later rescind</item>
+        <item>Accused of vote pandering during Rose Bowl game</item>
     </string-array>
     <string-array formatted="false" name="FiorinaRecord">
         <item>Opposed ObamaCare</item>
@@ -603,6 +607,7 @@
         <item>44 M</item>
     </string-array>
     <string-array formatted="false" name="CruzStrategy">
+        <item>Considering joining Trump\'s ticket</item>
         <item>Third in Iowa</item>
         <item>Behind in New Hampshire and South Carolina</item>
         <item>Unlikely to win Massachussetts</item>
@@ -844,6 +849,7 @@
 
     <!--Jindal-->
     <string-array formatted="false" name="JindalDescription">
+        <item><b>Jindal has since dropped out of the 2016 Presidential Election</b></item>
         <item>Governor of Louisiana</item>
         <item>Louisiana House of Representatives</item>
         <item>Net Worth: $2,700,000</item>

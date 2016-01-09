@@ -122,12 +122,10 @@ public class MyFragment extends Fragment {
             }
         });
 
-        LinearLayout cWindow = (LinearLayout) l.findViewById(R.id.CandidateWindow);
-        cWindow.setOnClickListener(new View.OnClickListener() {
+        Button candidateButton = (Button) l.findViewById(R.id.content);
+        candidateButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                TextView childCandidateLabel = (TextView) ((ViewGroup)v).getChildAt(0);
-                String found_candidate = (String) childCandidateLabel.getText();
                 Intent biosIntent = new Intent(getActivity(), Bios.class);
                 biosIntent.putExtra("candidatePosition", pos);
                 if(isRepublican)
