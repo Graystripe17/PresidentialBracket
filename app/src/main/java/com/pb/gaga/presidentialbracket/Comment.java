@@ -1,4 +1,4 @@
-package com.example.gaga.presidentialbracket;
+package com.pb.gaga.presidentialbracket;
 
 public class Comment {
     String _Candidate;

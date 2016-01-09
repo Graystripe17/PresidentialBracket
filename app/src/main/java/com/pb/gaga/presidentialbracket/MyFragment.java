@@ -1,27 +1,15 @@
-package com.example.gaga.presidentialbracket;
+package com.pb.gaga.presidentialbracket;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
-import android.content.res.Resources;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.graphics.drawable.Drawable;
-import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.util.DisplayMetrics;
-import android.util.LruCache;
-import android.util.TypedValue;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.FrameLayout;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -117,6 +105,25 @@ public class MyFragment extends Fragment {
         // This onClickListener is overwritten each time.
         // The only element it grabs is ROOT
         root.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                TextView childCandidateLabel = (TextView) ((ViewGroup)v).getChildAt(0);
+                String found_candidate = (String) childCandidateLabel.getText();
+                Intent biosIntent = new Intent(getActivity(), Bios.class);
+                biosIntent.putExtra("candidatePosition", pos);
+                if(isRepublican)
+                    biosIntent.putExtra("candidateName", current_front_republican);
+                else
+                    biosIntent.putExtra("candidateName", current_front_democrat);
+                biosIntent.putExtra("UN", username);
+                biosIntent.putExtra("PosterID", PosterID);
+                biosIntent.putExtra("isRepublican", isRepublican);
+                startActivity(biosIntent);
+            }
+        });
+
+        LinearLayout cWindow = (LinearLayout) l.findViewById(R.id.CandidateWindow);
+        cWindow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 TextView childCandidateLabel = (TextView) ((ViewGroup)v).getChildAt(0);

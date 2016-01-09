@@ -1,7 +1,5 @@
-package com.example.gaga.presidentialbracket;
+package com.pb.gaga.presidentialbracket;
 
-
-import com.jjoe64.graphview.series.DataPoint;
 
 public class CandidateBioParagraphs {
     String name;

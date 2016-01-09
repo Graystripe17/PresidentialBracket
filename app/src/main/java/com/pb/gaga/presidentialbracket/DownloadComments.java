@@ -1,4 +1,4 @@
-package com.example.gaga.presidentialbracket;
+package com.pb.gaga.presidentialbracket;
 
 import android.os.AsyncTask;
 
@@ -11,11 +11,15 @@ import java.net.URL;
 import java.net.URLConnection;
 import java.util.ArrayList;
 
-public class DownloadCommentsUpdated extends AsyncTask<String, Void, Void> {
+
+public class DownloadComments extends AsyncTask<String, Void, Void> {
     static ArrayList<Comment> candidateCommentArrayList = new ArrayList<Comment>();
 
-    DownloadCommentsUpdated() {
+    DownloadComments() {
+        Comment sample = new Comment("Trump", "MyPosterName", 1, "maermgamr");
         candidateCommentArrayList.clear();
+        candidateCommentArrayList.add(sample);
+
     }
 
     @Override
@@ -35,12 +39,18 @@ public class DownloadCommentsUpdated extends AsyncTask<String, Void, Void> {
             BufferedReader reader = new BufferedReader(new InputStreamReader(conn.getInputStream()));
 
             StringBuilder sb = new StringBuilder();
-            String line = null;
+            String line = reader.readLine();
 
             // Read Server Response
             // Skip until it works
-            while (!(line = reader.readLine()).contains("COMMENTLINEARLIST")) {
+            int counter = 10000;
+            while (!(line).contains("COMMENTLINEARLIST")) {
                 // Finished
+                line = reader.readLine();
+                if(counter-- < 0 || line == null) {
+                    // Error retrieving
+                    return null;
+                }
             }
             CommentsInLinearList = Integer.parseInt(reader.readLine());
             // The Real JSON
@@ -56,23 +66,11 @@ public class DownloadCommentsUpdated extends AsyncTask<String, Void, Void> {
                     PushComment._ID = Integer.parseInt(targetComment.getString("ID"));
                     PushComment._Candidate = candidate;
                     PushComment._PosterName = targetComment.getString("PosterName");
-//                    if(targetComment.getString("ReplyToID") != "null") {
-//                        PushComment._ReplyToId = Integer.parseInt(targetComment.getString("ReplyToID"));
-//                    }
-//                    else {
-//                        PushComment._ReplyToId = 0;
-//                    }
-//                    if(targetComment.getString("Rating") != "null") {
-//                        PushComment._Rating = Integer.parseInt(targetComment.getString("Rating"));
-//                    } else {
-//                        PushComment._Rating = 0;
-//                    }
-                    PushComment._ReplyToId = 0;
-                    PushComment._Rating = 0;
+                    PushComment._ReplyToId = Integer.parseInt(targetComment.getString("ReplyToID"));
+                    PushComment._Rating = Integer.parseInt(targetComment.getString("Rating"));
                     PushComment._Comment = targetComment.getString("Comment");
-
                     // PushComment into candidateCommentArrayList
-                    DownloadCommentsUpdated.candidateCommentArrayList.add(PushComment);
+                    DownloadComments.candidateCommentArrayList.add(PushComment);
                 }
                 // getMenuInflater().inflate(R.menu., candidateCommentArrayList);
             }
@@ -84,4 +82,6 @@ public class DownloadCommentsUpdated extends AsyncTask<String, Void, Void> {
 
         return null;
     }
+
+
 }

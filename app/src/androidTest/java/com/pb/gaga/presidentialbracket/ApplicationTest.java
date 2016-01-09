@@ -1,4 +1,4 @@
-package com.example.gaga.presidentialbracket;
+package com.pb.gaga.presidentialbracket;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

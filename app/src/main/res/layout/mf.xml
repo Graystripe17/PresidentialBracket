@@ -4,11 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center">
-    <com.example.gaga.presidentialbracket.MyLinearLayout
+    android:gravity="center"
+    android:id="@+id/CandidateWindow">
+    <com.pb.gaga.presidentialbracket.MyLinearLayout
         android:id="@+id/Root"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         android:gravity="center"
         android:background="@android:color/transparent">
@@ -27,5 +28,5 @@
             android:layout_height="200dip"
             android:background="@drawable/cat">
         </Button>
-    </com.example.gaga.presidentialbracket.MyLinearLayout>
+    </com.pb.gaga.presidentialbracket.MyLinearLayout>
 </LinearLayout>
