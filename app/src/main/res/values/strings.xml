@@ -1,12 +1,12 @@
 <resources>
-    <string name="app_name">Presidential Tracker 2016</string>
+    <string name="app_name">Presidential Tracker</string>
 
-    <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_list">ListActivity</string>
     <string name="title_activity_next">nextActivity</string>
     <string name="LoginPost">GO</string>
     <string name="Carousel">Carousel</string>
+    <string name="splash_screen_text">Loading Candidates...</string>
 
 <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -37,6 +37,7 @@
     <string name="Pataki">who r u evn</string>
     <string name="Walker">walker</string>
     <string name="Perry">perry the platypus!!!</string>
+    <string name="splash_screen">Loading Candidates...</string>
 
     <!--Clinton-->
     <string-array formatted="false" name="ClintonDescription">

@@ -4,8 +4,8 @@
     <color name="primary_dark">#ff0000ff</color>
     <color name="accent">#ffffffff</color>
 
-    <color name="backdrop">#ff695c68</color>
-    <color name="backdrop_shadow">#ff4b3e49</color>
+    <color name="backdrop">#ff4b3e49</color>
+    <color name="backdrop_shadow">#ff695c68</color>
 
 
     <color name="R1">#ffff0000</color>

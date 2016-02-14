@@ -2,6 +2,8 @@ package com.pb.gaga.presidentialbracket;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Bundle;
@@ -154,6 +156,7 @@ public class MyFragment extends Fragment {
     }
 
     private Drawable findCandidateProfilePictureByName(String cname) {
+        Drawable withdrawn;
         if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             switch(cname) {
                 // Democrats
@@ -166,7 +169,9 @@ public class MyFragment extends Fragment {
                 case "Webb":
                     return getResources().getDrawable(R.drawable.webb, null);
                 case "O'Malley":
-                    return getResources().getDrawable(R.drawable.omalley, null);
+                    withdrawn = getResources().getDrawable(R.drawable.omalley, null);
+                    withdrawn.setColorFilter(Color.GRAY, PorterDuff.Mode.MULTIPLY);
+                    return withdrawn;
                 case "Chafee":
                     return getResources().getDrawable(R.drawable.chafee, null);
 
@@ -176,7 +181,9 @@ public class MyFragment extends Fragment {
                 case "Carson":
                     return getResources().getDrawable(R.drawable.carson, null);
                 case "Fiorina":
-                    return getResources().getDrawable(R.drawable.fiorina, null);
+                    withdrawn = getResources().getDrawable(R.drawable.fiorina, null);
+                    withdrawn.setColorFilter(Color.GRAY, PorterDuff.Mode.MULTIPLY);
+                    return withdrawn;
                 case "Rubio":
                     return getResources().getDrawable(R.drawable.rubio, null);
                 case "Bush":
@@ -186,32 +193,49 @@ public class MyFragment extends Fragment {
                 case "Kasich":
                     return getResources().getDrawable(R.drawable.kasich, null);
                 case "Huckabee":
-                    return getResources().getDrawable(R.drawable.huckabee, null);
+                    withdrawn = getResources().getDrawable(R.drawable.huckabee, null);
+                    withdrawn.setColorFilter(Color.GRAY, PorterDuff.Mode.MULTIPLY);
+                    return withdrawn;
                 case "Christie":
                     return getResources().getDrawable(R.drawable.christie, null);
                 case "Paul":
-                    return getResources().getDrawable(R.drawable.paul, null);
+                    withdrawn = getResources().getDrawable(R.drawable.paul, null);
+                    withdrawn.setColorFilter(Color.GRAY, PorterDuff.Mode.MULTIPLY);
+                    return withdrawn;
                 case "Jindal":
-                    return getResources().getDrawable(R.drawable.jindal, null);
+                    withdrawn = getResources().getDrawable(R.drawable.jindal, null);
+                    withdrawn.setColorFilter(Color.GRAY, PorterDuff.Mode.MULTIPLY);
+                    return withdrawn;
                 case "Santorum":
-                    return getResources().getDrawable(R.drawable.santorum, null);
+                    withdrawn = getResources().getDrawable(R.drawable.santorum, null);
+                    withdrawn.setColorFilter(Color.GRAY, PorterDuff.Mode.MULTIPLY);
+                    return withdrawn;
                 case "Graham":
-                    return getResources().getDrawable(R.drawable.graham, null);
+                    withdrawn = getResources().getDrawable(R.drawable.graham, null);
+                    withdrawn.setColorFilter(Color.GRAY, PorterDuff.Mode.MULTIPLY);
+                    return withdrawn;
                 case "Pataki":
-                    return getResources().getDrawable(R.drawable.pataki, null);
+                    withdrawn = getResources().getDrawable(R.drawable.pataki, null);
+                    withdrawn.setColorFilter(Color.GRAY, PorterDuff.Mode.MULTIPLY);
+                    return withdrawn;
                 case "Walker":
-                    return getResources().getDrawable(R.drawable.walker, null);
+                    withdrawn = getResources().getDrawable(R.drawable.walker, null);
+                    withdrawn.setColorFilter(Color.GRAY, PorterDuff.Mode.MULTIPLY);
+                    return withdrawn;
                 case "Perry":
-                    return getResources().getDrawable(R.drawable.perry, null);
+                    withdrawn = getResources().getDrawable(R.drawable.perry, null);
+                    withdrawn.setColorFilter(Color.GRAY, PorterDuff.Mode.MULTIPLY);
+                    return withdrawn;
                 case "Gilmore":
-                    return getResources().getDrawable(R.drawable.gilmore, null);
+                    withdrawn = getResources().getDrawable(R.drawable.gilmore, null);
+                    withdrawn.setColorFilter(Color.GRAY, PorterDuff.Mode.MULTIPLY);
+                    return withdrawn;
                 // Cannot find; return cat
                 default:
                     return getResources().getDrawable(R.drawable.cat, null);
             }
         } else {
             // TODO: ADD MORE THAN CATS
-
             return getResources().getDrawable(R.drawable.cat);
         }
     }

@@ -136,8 +136,8 @@ public class Carousel extends FragmentActivity {
         Rgraph.getViewport().setMaxX((double)(PollDates.get(poll_data_quantity - 1).getTime()));
         Rgraph.getViewport().setMinY(0);
         Rgraph.getViewport().setMaxY(40);
-        Rgraph.getViewport().setScalable(false);
-        Rgraph.getViewport().setScrollable(false);
+        Rgraph.getViewport().setScalable(true);
+        Rgraph.getViewport().setScrollable(true);
         // Set date label formatter
         Rgraph.getGridLabelRenderer().setLabelFormatter(new DateAsXAxisLabelFormatter(this) {
             @Override
@@ -166,8 +166,8 @@ public class Carousel extends FragmentActivity {
         Dgraph.getViewport().setMaxX(PollDates.get(poll_data_quantity - 1).getTime());
         Dgraph.getViewport().setMinY(0);
         Dgraph.getViewport().setMaxY(60);
-        Dgraph.getViewport().setScalable(false);
-        Dgraph.getViewport().setScrollable(false);
+        Dgraph.getViewport().setScalable(true);
+        Dgraph.getViewport().setScrollable(true);
         // Set date label formatter
         Dgraph.getGridLabelRenderer().setLabelFormatter(new DateAsXAxisLabelFormatter(this) {
             @Override

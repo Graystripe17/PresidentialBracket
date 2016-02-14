@@ -1,5 +1,6 @@
 package com.pb.gaga.presidentialbracket;
 
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,41 +15,14 @@ public class nextActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_next);
+
+
         // Class extends Context
         // Alternatively nextActivity.this...
         Context context = nextActivity.this;
         Bundle extras = getIntent().getExtras();
-//
-//        // GOP Graph
-//        GraphView Rgraph = (GraphView) findViewById(R.id.RepublicanGraph);
-//        Rgraph.getViewport().setYAxisBoundsManual(true);
-//        Rgraph.getViewport().setMinY(0);
-//        Rgraph.getViewport().setMaxY(40);
-//        Rgraph.getViewport().setScrollable(true);
-//        Rgraph.setTitle("R Graph");
-//
-//        // DNC Graph
-//        GraphView Dgraph = (GraphView) findViewById(R.id.DemocratGraph);
-//        Dgraph.getViewport().setYAxisBoundsManual(true);
-//        Dgraph.getViewport().setMinY(0);
-//        Dgraph.getViewport().setMaxY(40);
-//        Dgraph.getViewport().setScrollable(true);
-//        Dgraph.setTitle("D graph");
-//
-//
-//        Resources res = getResources();
-//        int[] RedRainbow = context.getResources().getIntArray(R.array.red_rainbow);
 
-//        for(int i = 0; i < Carousel.Republican.length; i++) {
-//            DataPoint[] popularity = new DataPoint[] {
-//                new DataPoint(0, 1),
-//                new DataPoint(1, 2),
-//                new DataPoint(3, i),
-//            };
-//            CandidateSeries Republican = new CandidateSeries(Carousel.Republican[i], popularity, this);
-//            Republican.setColor(RedRainbow[i / 3]);
-//            graph.addSeries(Republican);
-//        }
+
 
         Intent switchToCarousel = new Intent(nextActivity.this, Carousel.class);
         if(extras != null) {
