@@ -18,8 +18,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements AsyncTaskCompleteListener<String> {
 
-    private TextView status;
-    private EditText usernameField, passwordField;
+
     private EditText Handle;
     public static String username;
     public static int PosterID;

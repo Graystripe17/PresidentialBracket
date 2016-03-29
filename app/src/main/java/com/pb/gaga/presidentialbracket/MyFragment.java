@@ -179,14 +179,20 @@ public class MyFragment extends Fragment {
                 case "Trump":
                     return getResources().getDrawable(R.drawable.trump, null);
                 case "Carson":
+                    withdrawn = getResources().getDrawable(R.drawable.carson, null);
+                    withdrawn.setColorFilter(Color.GRAY, PorterDuff.Mode.MULTIPLY);
                     return getResources().getDrawable(R.drawable.carson, null);
                 case "Fiorina":
                     withdrawn = getResources().getDrawable(R.drawable.fiorina, null);
                     withdrawn.setColorFilter(Color.GRAY, PorterDuff.Mode.MULTIPLY);
                     return withdrawn;
                 case "Rubio":
+                    withdrawn = getResources().getDrawable(R.drawable.rubio, null);
+                    withdrawn.setColorFilter(Color.GRAY, PorterDuff.Mode.MULTIPLY);
                     return getResources().getDrawable(R.drawable.rubio, null);
                 case "Bush":
+                    withdrawn = getResources().getDrawable(R.drawable.bush, null);
+                    withdrawn.setColorFilter(Color.GRAY, PorterDuff.Mode.MULTIPLY);
                     return getResources().getDrawable(R.drawable.bush, null);
                 case "Cruz":
                     return getResources().getDrawable(R.drawable.cruz, null);
@@ -197,6 +203,8 @@ public class MyFragment extends Fragment {
                     withdrawn.setColorFilter(Color.GRAY, PorterDuff.Mode.MULTIPLY);
                     return withdrawn;
                 case "Christie":
+                    withdrawn = getResources().getDrawable(R.drawable.christie, null);
+                    withdrawn.setColorFilter(Color.GRAY, PorterDuff.Mode.MULTIPLY);
                     return getResources().getDrawable(R.drawable.christie, null);
                 case "Paul":
                     withdrawn = getResources().getDrawable(R.drawable.paul, null);

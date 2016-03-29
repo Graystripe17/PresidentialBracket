@@ -8,8 +8,8 @@ android {
         applicationId "com.pb.gaga.presidentialbracket"
         minSdkVersion 11
         targetSdkVersion 22
-        versionCode 7
-        versionName "1.1.6"
+        versionCode 9
+        versionName "1.1.8"
     }
     buildTypes {
         release {

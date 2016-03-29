@@ -41,6 +41,9 @@
 
     <!--Clinton-->
     <string-array formatted="false" name="ClintonDescription">
+        <item>1712 total delegates out of 4763 (2382 to win)</item>
+        <item>4051 delegates out of 4051</item>
+        <item>469 superdelegates out of 712</item>
         <item>Self-proclaimed Progressive</item>
         <item>Secretary of State</item>
         <item>New York Senator</item>
@@ -106,6 +109,9 @@
 
     <!--Sanders-->
     <string-array formatted="false" name="SandersDescription">
+        <item>1004 total delegates out of 4763 (2382 to win)</item>
+        <item>975 delegates out of 4051</item>
+        <item>29 superdelegates out of 712</item>
         <item>Self-proclaimed Democratic Socialist</item>
         <item>Mayor of Burlington</item>
         <item>Vermont Senator</item>
@@ -302,6 +308,7 @@
 
     <!--Trump-->
     <string-array formatted="false" name="TrumpDescription">
+        <item>739 total delegates out of 2472 (1237 to win)</item>
         <item>Currently Republican</item>
         <item>Chairman of <b>The Trump Organization</b></item>
         <item>Chairman of <b>Trump Plaza Associates</b></item>
@@ -602,6 +609,7 @@
 
     <!--Cruz-->
     <string-array formatted="false" name="CruzDescription">
+        <item>465 total delegates out of 2472 (1237 to win)</item>
         <item>Texas Senator</item>
         <item>Net Worth: $1,500,000</item>
         <item>Southern Baptist</item>
@@ -656,6 +664,7 @@
 
     <!--Kasich-->
     <string-array formatted="false" name="KasichDescription">
+        <item>143 total delegates out of 2472 (1237 to win)</item>
         <item>Governor of Ohio</item>
         <item>Ohio House of Representatives</item>
         <item>Net Worth: $2,500,000</item>
